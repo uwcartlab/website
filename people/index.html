@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+	<!-- Basic Page Needs
+================================================== -->
+	<meta charset="utf-8">
+	<title>UWCL</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<style>
+		#results {
+			min-height: 100% !important;
+			overflow: auto;
+			margin-bottom: 50px !important;
+			padding-bottom: 50px !important;
+		}
+
+		#ajaxloader {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		ol li:before {
+			background-color: none !important;
+		}
+
+		footer {
+			margin-top: 50px;
+		}
+
+		.d-block w-100 {
+			position: relative;
+			margin-right: 0% !important;
+			margin-left: 22.5% !important;
+			padding: 0px !important;
+		}
+
+		.carousel-inner>.item>img {
+			margin: 0 auto !important;
+		}
+
+		.profile-thumbnail {
+			height: auto;
+			max-width: 125%;
+		}
+
+		.back_top {
+			text-align: right !important;
+		}
+	</style>
+
+	<!-- Mobile Specific Metas
+================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+================================================== -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!--[if lt IE 9]>
+	<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+	<!-- Fonts
+================================================== -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet'
+		type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Javascript
+================================================== -->
+	<script type="text/javascript" src="../js/modernizr.custom.79639.js"></script>
+
+	<!-- Favicons
+================================================== -->
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-touch-icon-144x144.png">
+
+</head>
+
+<body>
+	<!--Collapsing NavBar -->
+	<site-header></site-header>
+	<!--end of header -->
+
+	<div class='container'>
+		<div class='col-md-12'>
+
+			<a name="backtotop"></a>
+
+			<h1 class='page-header'>People</h1>
+
+			<div id="peopleCarousel" class="carousel slide" data-ride="carousel">
+
+				<!-- Indicators -->
+				<div class="carousel-indicators">
+					<button type="button" class="indicator-button active" data-bs-target="#peopleCarousel"
+						data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" class="indicator-button" data-bs-target="#peopleCarousel" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" class="indicator-button" data-bs-target="#peopleCarousel" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+					<button type="button" class="indicator-button" data-bs-target="#peopleCarousel" data-bs-slide-to="3"
+						aria-label="Slide 4"></button>
+				</div>
+
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="5000">
+						<img src="img/carousel/NACIS_2017.png" class='d-block w-100' alt="...">
+
+						<div class="carousel-caption">
+							<h2 id="caption-light">UW–Madison Alumni at NACIS 2017 in Montréal</h2>
+						</div>
+					</div>
+
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="img/carousel/NACIS_2016.png" class='d-block w-100' alt="...">
+
+						<div class="carousel-caption">
+							<h2 id="caption-light">UW–Madison Alumni at NACIS 2016 in Colorado Springs</h2>
+						</div>
+					</div>
+
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="img/carousel/people.png" class='d-block w-100' alt="...">
+
+						<div class="carousel-caption">
+							<h2 id="caption-light">#DesignChallenge2016 preparation</h2>
+						</div>
+					</div>
+
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="img/carousel/people_esriUC.png" class='d-block w-100' alt="...">
+
+						<div class="carousel-caption">
+							<h2 id="caption-light">UW–Madison at ESRI User Conference</h2>
+						</div>
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				<button class="carousel-control-prev" data-bs-target="#peopleCarousel" type="button"
+					data-bs-slide="prev">
+					<span class="fa fa-chevron-left fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" data-bs-target="#peopleCarousel" type="button"
+					data-bs-slide="next">
+					<span class="fa fa-chevron-right fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class='container'>
+		<div class='row overview'>
+			<div class='col-md-8'>
+				<h2>Who We Are</h2>
+				<p>Since 1953, the UW Cartography Lab has been a center of innovation for map design, interactive
+					visualization, and geographic thinking. The Cart Lab is a unique “maker”-space in which researchers,
+					professional designers, and students work together to discuss complex problems and create compelling
+					visuals. <a href="#history"> Read more about our history...</a></p>
+			</div>
+
+			<div class='col-md-4'>
+
+				<h3>People</h3>
+
+				<div>
+					<p><a href="#leadership">Leadership</a><br>
+						<a href="#current">Current Students</a><br>
+						<a href="#alumni">Alumni</a><br>
+						<a href="#collaborators">Collaborators</a><br>
+						<a href="../github.html">Github Projects</a><br>
+						<a href="../contact.html">Contact Us</a><br>
+				</div>
+
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class='col-md-12'>
+				<a name="leadership"></a>
+				<h2 class='page-header'>Leadership</h2>
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class='col-md-2'>
+				<img src="img/directors/tanya_buckingham.jpg" alt="..." class="">
+			</div>
+
+			<div class='col-md-3'>
+				<h3><a href="Buckingham.html">Tanya Buckingham</a></h3>
+				<p><i>Creative Director</i><br>
+					Email: tanya.buckingham@wisc.edu<br>
+					Twitter: <a href="https://twitter.com/tanmabuck" target=”_blank”>@tanmabuck </a><br>
+				</p>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/directors/rob_roth.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+
+				<h3><a href="Roth.html">Robert Roth</a></h3>
+
+				<p><i>Faculty Director</i><br>
+					Email: reroth@wisc.edu<br>
+					Twitter: <a href="https://twitter.com/RobertERoth" target=”_blank”>@RobertERoth </a><br>
+				</p>
+
+			</div>
+		</div>
+
+		<br>
+
+		<div class='row'>
+			<div class='col-md-2'>
+				<img src="img/directors/daniel_huffman.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+
+				<h3>Daniel Huffman</h3>
+
+				<p><i>Cartographer in Residence</i><br>
+					Email: daniel.p.huffman@gmail.com<br>
+					Twitter: <a href="https://twitter.com/pinakographos" target=”_blank”>@pinakographos</a><br>
+					<a href="https://somethingaboutmaps.wordpress.com/" target=”_blank”>Portfolio </a><br>
+				</p>
+
+			</div>
+
+			<div class='col-md-2'>
+			</div>
+
+			<div class='col-md-3'>
+			</div>
+		</div>
+
+
+		<div class='row'>
+			<div class='col-md-12'>
+				<p class="back_top"><a href="#backtotop">Back to Top</a></p>
+			</div>
+		</div>
+
+
+		<div class='row'>
+			<div class='col-md-12'>
+				<a name="current"></a>
+				<h2 class='page-header'>Current Students</h2>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class='col-md-2'>
+				<img src="img/current_students/Chris_Archuleta.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Chris Archuleta </h3>
+				<p><i>Undergraduate Student</i><br>
+					Twitter: <a href="https://twitter.com/@Geodesy_" target=”_blank”>@Geodesy_</a><br>
+			</div>
+			<div class="col-md-2">
+				<img src="img/current_students/Kallista_Bley.jpg" alt="..." class="profile-thumbnail">
+			</div>
+			<div class='col-md-3'>
+				<h3>Kallista Bley</h3>
+				<p><i>Ph.D. Student</i><br>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class='col-md-2'>
+				<img src="" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Kella Caldwell</h3>
+				<p><i>Masters Student</i><br>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/current_students/AnnaGeorge.png" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Anna George </h3>
+				<p><i>Masters Student</i><br>
+					Twitter: <a href="https://twitter.com/@annaegeorge" target=”_blank”>@annaegeorge</a><br>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-md-2">
+				<img src="img/current_students/CG Photo_Edited.png" alt="..." class="profile-thumbnail">
+			</div>
+			<div class="col-md-3">
+				<h3>Carly Griffith</h3>
+				<p><i>PhD Student</i></p>
+				Twitter: <a href="https://twitter.com/carly_cgriffith" target=”_blank”>@carly_cgriffith</a><br>
+				<a href="https://cgriffith5.github.io/index.html" target=”_blank”>Portfolio </a><br>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/current_students/alicia_iverson.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Alicia Iverson </h3>
+				<p><i>PhD Student</i><br>
+					Twitter: <a href="https://twitter.com/AliciaAIverson" target=”_blank”>@AliciaAIverson </a><br>
+				</p>
+			</div>
+		</div>
+
+		<br>
+
+		<div class='row'>
+			<div class='col-md-2'>
+				<img src="img/current_students/meghan_kelly.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Meghan Kelly</h3>
+				<p><i>Ph.D. Student</i><br>
+					Twitter: <a href="https://twitter.com/meghankellymaps" target=”_blank”>@meghankellymaps</a><br>
+					<a href="https://meghankelly-cartography.github.io" target=”_blank”>Portfolio </a><br>
+				</p>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/current_students/chelsea_nestel.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Chelsea Nestel </h3>
+				<p><i>Ph.D. Student</i><br>
+					<a href="https://nestelmaps.azurewebsites.net/" target=”_blank”>Portfolio</a><br>
+				</p>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class='col-md-2'>
+				<img src="img/current_students/prestby.png" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Tim Prestby </h3>
+				<p><i>Undergraduate Student</i><br>
+					Twitter: <a href="https://twitter.com/TimPrestby" target=”_blank”>@TimPrestby</a><br>
+					<a href="https://timprestby.github.io" target=”_blank”>Portfolio</a><br>
+				</p>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/current_students/Josh_Riebe.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Josh Riebe </h3>
+				<p><i>Undergraduate Student</i><br>
+			</div>
+		</div>
+
+		<br>
+
+		<div class='row'>
+			<div class='col-md-2'>
+				<img src="img/current_students/megan_roessler.jpg" class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Megan Roessler</h3>
+				<p><i>Masters Student</i><br>
+					<a href="https://megan-Roessler.github.io" target=”_blank”>Portfolio</a><br>
+				</p>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/current_students/underwood.PNG" class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Nick Underwood </h3>
+				<p><i>Masters Student</i><br>
+					Twitter: <a href="https://twitter.com/mulletmapping" target=”_blank”>@mulletmapping</a><br>
+					<a href="https://nunderwood6.github.io/portfolio/" target=”_blank”>Portfolio</a><br>
+				</p>
+			</div>
+		</div>
+
+		<br>
+
+		<div class='row'></div>
+
+		<br>
+
+		<div class='row'>
+			<div class='col-md-12'>
+				<p class="back_top"><a href="#backtotop">Back to Top</a></p>
+			</div>
+		</div>
+
+		<!-- Alumni Page Begins here-->
+		<div class='row'>
+			<div class='col-md-12'>
+				<a name="alumni"></a>
+				<h2 class='page-header'>Alumni</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<ol>
+					<li>
+						Leanne Abraham | <a href="https://leanneabraham.github.io/" target=”_blank”>Portfolio </a>
+					</li>
+					<li>
+						Evan Applegate | <a href="https://www.bloomberg.com/authors/AQBn-OT_DJU/evan-applegate"
+							target="_blank">Cartographer & graphics editor for Bloomberg </a>|<a
+							href="https://www.evanapplegate.com/" target="_blank"> Portfolio</a>
+					</li>
+					<li>
+						Peter Bauknecht | <a href="https://www.linkedin.com/company/cci-systems-inc/"
+							target="_blank">Design Engineer for CCI Systems, Inc </a>| <a
+							href="https://www.linkedin.com/in/pete-bauknecht-3a0237100/" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Sarah Bennett | <a href="https://languages.wisc.edu/languages/russian" target="_blank">Russian
+							Table, President </a>
+					</li>
+					<li>
+						Mike Bricknell | <a href="https://www.cfr.org/staff" target="_blank">Data Visualization Designer
+							for Council on Foreign Relations</a> | <a href="https://www.mbrickmaps.com/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						JJ Czaplewski | <a href="https://geoscience.wisc.edu/geoscience/people/staff/"
+							target="_blank">Programmer Analyst for UW-Madison Department of Geoscience </a> | <a
+							href="https://www.johnjcz.com/" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Brian Davidson | <a href="https://www.linkedin.com/company/mapbox/" target="_blank">Sales
+							Engineer for Mapbox</a> | <a href="https://briandaviddavidson.com/portfolio/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Natalee Desotell | <a
+							href='https://publichealth.yale.edu/admissions/programs/mph/two-year_mph.aspx'
+							target='_blank'> Student at Yale School of Public Health </a> | <a
+							href="https://nataleedesotell.github.io/about.html" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Richard Donohue | <a href="https://geography.as.uky.edu/users/rgdo225"
+							target="_blank">Postdoctoral Researcher for University of Kentucky</a> | <a
+							href="https://github.com/rgdonohue" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Blake Draper | <a href="https://www.usgs.gov/staff-profiles/blake-a-draper"
+							target="_blank">Software Developer / Geographer for USGS</a> | <a
+							href="https://wim.usgs.gov/#/" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Marty Elmer | <a
+							href="https://www.capella.edu/homepage2/?adobe_mc_sdid=SDID%3D16288227DE9F9485-126275928C0CE90D%7CMCORGID%3DA6E2776A5245B0D20A490D44%40AdobeOrg%7CTS%3D1547506366"
+							target="_blank">Interactive Designer at Capella Education Company</a> | <a
+							href="https://www.about.maphugger.com/portfolio.html" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Scott Farley | <a href="https://www.mapbox.com/about/team/scott-farley/"> Engineer for
+							Mapbox</a> | <a href="https://scottsfarley.com/" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Chris Gavin | Cartographer for CIA</a> | <a href="https://twitter.com/ChrisMGavin"
+							target="_blank">Twitter </a>
+					</li>
+					<li>
+						Timur Girgin | <a href='https://www.blueraster.com/who-we-are/our-team/' target='_blank'>GIS
+							Developer at Blue Raster</a> | <a href="https://twitter.com/tgirgin2"
+							target="_blank">Twitter </a>
+					</li>
+					<li>
+						Erin Hamilton | <a href="https://www.resourcedata.com/" target="_blank">GIS Programmer/Analyst
+							at Resource Data, Inc.</a> | <a href="https://www.erinhamilton.me/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Brooke Harding | <a href="https://www.linkedin.com/company/usaid/about/"
+							target="_blank">Information Officer for - Office of Transition Initiatives</a> | <a
+							href="https://brookeeharding.github.io/" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Katie Hardwick | <a href="https://maps.sco.wisc.edu/BordnerCoastal/about/"> Digitizer for the
+							Bordner Project</a> | <a href="https://twitter.com/cuterkat" target="_blank">Twitter </a>
+					</li>
+					<li>
+						Jeff Ingebritsen | <a href="https://www.fws.gov/wetlands/nwi/Staff.html" target="_blank">GIS
+							Specialist for the U.S. Fish and Wildlife Service</a> | <a
+							href="https://twitter.com/JeffIngebritsen" target="_blank">Twitter </a>
+					</li>
+					<li>
+						Morgan Jarocki | <a href="https://www.linkedin.com/company/us-census-bureau/"
+							target="_blank">Cartographer for U.S. Census Bureau</a> | <a
+							href="https://morganjarocki.wixsite.com/folio" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Mitch Johnson | <a href="https://www.madsewer.org/">GIS Specialist for Madison Metropolitan
+							Sewerage District</a> | <a
+							href="https://www.linkedin.com/in/mitchell-johnson-164b76105/?locale=de_DE"
+							target="_blank">Portfolio </a>
+					<li>
+						Zach Johnson | <a href="https://www.linkedin.com/company/geoiq/about/" target="_blank">
+							Visualization Engineer at GeoIQ</a> | <a href="https://indiemaps.com"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Casey Kalman | <a href="https://www.hhs.gov/about/careers/index.html"> GIS Analyst U.S.
+							Department of Health and Human Services (HHS) </a> | <a
+							href="https://caseykalman.github.io/" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Katie Kowalsky | <a href="https://www.linkedin.com/company/here/" target="_blank"> Product
+							Manager at HERE Technologies </a> | <a href="https://github.com/kkowalsky" target="_blank">
+							Portfolio </a>
+					</li>
+					<li>
+						Vanessa Knoppke-Wetzel | <a href="https://www.nfwf.org/whoweare/Pages/home.aspx"
+							target="_blank"> Cartographer for NFWF</a> | <a href="https://vknoppkewetzel.github.io/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Jon Koser | Verification & Validation Engineer for Philips Healthcare, Fitchburg, WI</a> | <a
+							href="https://jonkoser.github.io/about.html" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Nick Lally | <a href="https://www.nicklally.com/" target=”_blank”>Portfolio </a><br>
+					</li>
+					<li>
+						Calla Little | <a href="https://www.fishinghotspots.com/#home"> Website & graphics editor for
+							Fishing Hot Spots</a> | <a href="https://callalittle.github.io/" target="_blank">Portfolio
+						</a>
+					</li>
+					<li>
+						Adam Lyons | <a href="https://www.linkedin.com/company/alpha-baking/" target="_blank">Route
+							Sales Representative for Alpha Baking Co., Inc</a> | <a
+							href="https://adamlyons.carbonmade.com/projects/4040638/11965894" target="_blank">Portfolio
+						</a>
+					</li>
+					<li>
+						Sam Matthews | <a href="https://www.mapbox.com/about/team/sam-matthews/" target="_blank">Core
+							Tech engineer for Mapbox</a> | <a href="https://mapsam.com/" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Rashauna Mead | <a href="https://www.redoxengine.com/blog/day-without-women-redox/"
+							target="_blank">Full Stack Developer for Redox</a> | <a
+							href="https://twitter.com/RashaunaMead" target="_blank">Twitter </a>
+					</li>
+					<li>
+						Eric Nost | <a href="https://www.uoguelph.ca/geography/faculty/nost-eric"
+							target="_blank">University of Guelph, Assistant Professor</a> | <a
+							href="https://ericnost.github.io" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Eric Oberhart | <a href="https://www.cpcstrans.com/en/consultant-profiles/eric-oberhart/"
+							target="_blank">Consultant for CPCS</a> | <a href="https://twitter.com/ericoberhart"
+							target="_blank">Twitter </a>
+					</li>
+					<li>
+						Laura Poplett | <a href="https://www.wisconsinhistory.org/staff-directory/webstaff.asp"
+							target="_blank"> Digital Project Archivist at the Wisconsin Center for Film and Theater
+							Research</a> | <a href="https://twitter.com/LauraPoplett" target="_blank">Twitter </a>
+					</li>
+					<li>
+						Chloe Quinn | <a href="https://www.linkedin.com/company/tableau-software/" target="_blank">User
+							Experience Designer at Tableau Software</a> | <a href="https://www.chloequinn.design/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Caroline Rose | <a href='https://wgnhs.uwex.edu/about/people/' target='_blank'> GIS Specialist
+							at Wisconsin Geological and Natural History </a> | <a
+							href="https://cmrrose.github.io/about.html" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Carl Sack | <a
+							href='https://fdltcc.edu/campus-life/student-clubs-organizations/geographic-information-systems-users-club/'
+							target='_blank'> GIS Faculty at Fond du Lac Tribal and Community College </a> | <a
+							href="https://www.northlandia.com/" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Josie Sajbel | <a href='https://www.linkedin.com/company/spglobalplatts/' target='_blank'>
+							Cartographer at S&P Global Platts </a> | <a href="https://sajbelcart.github.io/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Sarah Scott | <a href="https://www.blm.gov/services/geospatial/GISData" target="_blank">GIS
+							Specialist with the Bureau of Land Management in Arizona</a> | <a
+							href="https://cargocollective.com/sjscott4/BLM-Land-Exchange-Reference"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Colter Sikora | <a href="https://psc.wi.gov/Pages/Home.aspx" target="_blank"> Broadband Mapping
+							Coordinator for the Public Service Commission of Wisconsin </a> | <a
+							href="https://twitter.com/colterrificmaps" target="_blank">Twitter </a>
+					</li>
+					<li>
+						Sarah Sommerkamp | <a href="https://www.jvskc.org/global-gardens-2/"> Coordinator for Global
+							Gardeners</a> | <a href="https://www.linkedin.com/in/sesommerkamp/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Chandler Sterling | <a
+							href="https://pasgis.maps.arcgis.com/apps/MapAndAppGallery/index.html?appid=2053f2c744304bf8a787eeee8f768b05&group=6db0dd784c344d05a28200515ad7b4ba"
+							target="_blank">Senior GIS Analyst for te City of Pasadena</a> | <a
+							href="https://github.com/csterling" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Matt Sudac | <a href="https://www.linkedin.com/company/transmart-technologies-inc./about/"
+							target="_blank"> Traffic Data Technician/Planner TranSmart Technologies, Inc</a>
+					</li>
+					<li>
+						Ross Thorn | <a href="https://www.northpointgis.com/12070-2/staff/"> GIS Analyst/Developer </a>
+						| <a href="https://rossthorn.github.io/" target=”_blank”>Portfolio</a><br>
+
+					</li>
+					<li>
+						Robin Tolochko | <a href="https://www.uber.com/info/mapping/"> Product Manager for Uber</a> | <a
+							href="https://tolomaps.github.io" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Claire Trainor | <a href='https://www.nationalgeographic.com/jobs/' target='_blank'> Graphics
+							Editor for National Geographic</a> | <a href="https://www.claretrainor.com/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Tim Wallace | <a href="https://www.nytimes.com/by/tim-wallace" target="_blank"> Graphics editor
+							and geographer for The New York Times</a> | <a href="https://timwallace.net/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Soren Walljasper | <a href='https://www.nationalgeographic.com/jobs/' target='_blank'> Graphics
+							Editor for National Geographic</a> | <a href="https://swalljasper.github.io/"
+							target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Grace White | <a href="https://legis.wisconsin.gov/ltsb/gis/gis-team/"
+							target="_blank">Cartographer for Legislative Technology Services Bureau</a> | <a
+							href="https://gracefulmaps.tumblr.com/" target="_blank">Portfolio </a>
+					</li>
+					<li>
+						Jeremy White | <a href="https://www.nytimes.com/by/jeremy-white" target="_blank">Graphics editor
+							for The New York Times</a> | <a href="https://blueshirt.com/" target="_blank">Portfolio </a>
+					</li>
+
+				</ol>
+			</div>
+		</div>
+
+		<br>
+
+		<div class='row'>
+			<div class='col-md-12'>
+				<p class="back_top"><a href="#backtotop">Back to Top</a></p>
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class='col-md-12'>
+				<a name="collaborators"></a>
+				<h2 class='page-header'>Collaborators</h2>
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class='col-md-2'>
+				<img src="img/collaborators/sarah_moore.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3><a href="https://geography.wisc.edu/profile.php?p=107" target="_block">Sarah Moore</a></h3>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/collaborators/morgan_robertson.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3><a href="https://geography.wisc.edu/profile.php?p=110" target="_block">Morgan Robertson</a></h3>
+			</div>
+
+		</div>
+
+		<br>
+
+		<div class='row'>
+			<div class='col-md-2'>
+				<img src="img/collaborators/jack_williams.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3><a href="https://geography.wisc.edu/profile.php?p=51" target="_block">Jack Williams</a></h3>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/collaborators/matt_turner.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3><a href="https://geography.wisc.edu/profile.php?p=30" target="_block">Matt Turner</a></h3>
+			</div>
+		</div>
+
+		<br>
+
+		<div class='row'>
+			<div class='col-md-2'>
+				<img src="img/collaborators/kris_olds.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3>Kris Olds</h3>
+				<p>Twitter: <a href="https://twitter.com/GlobalHigherEd?lang=en">@GlobalHigherEd</a><br>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/default/default.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3><a href="" target="_block">University of Minnesota</a></h3>
+			</div>
+		</div>
+
+		<br>
+
+		<div class='row'>
+			<div class='col-md-2'>
+				<img src="img/default/default.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3><a href="https://www.blwcenter.org/" target="_block">Bridge Lake Point Waunona</a></h3>
+			</div>
+
+			<div class='col-md-2'>
+				<img src="img/default/default.jpg" alt="..." class="profile-thumbnail">
+			</div>
+
+			<div class='col-md-3'>
+				<h3><a href="https://www.unitedwaydanecounty.org/2012/04/a-clear-journey-home-is-the-best-journey-you-can-take/
+				" target="_block">United Way of Dane County</a></h3>
+			</div>
+		</div>
+
+		<br>
+		<div class='row'>
+			<div class='col-md-12'>
+				<div class='col-md-8'>
+
+					<h2 class="page-header" id='history'>History of the UW Cart Lab</h2>
+
+					<p>Established in 1953 by Arthur H. Robinson, the Cartography Lab has created virtually every kind
+						and size of map, for a wide variety of academic, commercial, and individual customers.</p>
+					<p>Robinson demonstrated an aptitude for cartography and began drawing maps for faculty textbooks
+						while earning a master's degree in geography from the University of Wisconsin-Madison and a
+						doctorate from Ohio State.</p>
+					<p>Recruited for the Office of Strategic Services in 1941, Robinson headed its map division
+						throughout World War II, overseeing the drawing of about 5,000 maps for the military. At war's
+						end, he joined the University of Wisconsin-Madison faculty, where he taught at Science Hall
+						until his retirement in 1980.</p>
+					<p>Arthur H. Robinson is perhaps best known to the public as the creator of the Robinson Projection,
+						a map projection that he referred to as "a portrait of the earth." In 1988 the National
+						Geographic Society adopted that projection as its standard for producing world maps, followed by
+						agencies of the U.S. Government and others worldwide.</p>
+
+					<h6><a href="../contact.html">Contact Us</a></h6>
+
+				</div>
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class='col-md-12'>
+				<p class="back_top"><a href="#backtotop">Back to Top</a></p>
+			</div>
+		</div>
+
+	</div>
+
+	<site-footer></site-footer>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"
+		integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.js" type="text/javascript"></script>
+	<script src="../js/jquery.cookie.js" type="text/javascript"></script>
+	<script src="../js/jquery.ba-cond.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.slitslider.js" type="text/javascript"></script>
+	<script src="../js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="../js/custom.js" type="text/javascript"></script>
+	<script src="../js/main.js" type="text/javascript"></script>
+	<script src="../js/html_templates.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

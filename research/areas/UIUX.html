@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+	<!-- Basic Page Needs
+================================================== -->
+	<meta charset="utf-8">
+	<title>UWCL</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<style>
+		#results {
+			min-height: 100% !important;
+			overflow: auto;
+			margin-bottom: 50px !important;
+			padding-bottom: 50px !important;
+		}
+
+		#ajaxloader {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		a {
+			cursor: pointer;
+		}
+
+		ol li:before {
+			background-color: none !important;
+		}
+
+		footer {
+			margin-top: 50px;
+		}
+
+		.img-responsive {
+			position: relative;
+			margin-right: 0% !important;
+			margin-left: 22.5% !important;
+			padding: 0px !important;
+		}
+
+		.carousel-inner>.item>img {
+			margin: 0 auto !important;
+		}
+
+		.overview {
+			padding-top: 50px;
+			margin-right: 0% !important;
+			margin-left: 0% !important;
+		}
+	</style>
+
+	<!-- Mobile Specific Metas
+================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+================================================== -->
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+	<!--[if lt IE 9]>
+	<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+	<!-- Fonts
+================================================== -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet'
+		type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Javascript
+================================================== -->
+	<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
+
+	<!-- Favicons
+================================================== -->
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
+
+</head>
+
+<body>
+	<!--Collapsing NavBar -->
+	<site-header-2></site-header-2>
+	<!--end of header -->
+
+	<div class='container'>
+		<div>
+			<div class='col-md-12'>
+
+				<h1 class='page-header'>Research in <i>UI/UX Design</i></h1>
+
+				<div id="researchCarousel" class="carousel slide" data-ride="carousel">
+
+					<!-- Indicators -->
+					<div class="carousel-indicators">
+						<button type="button" class="indicator-button active" data-bs-target="#researchCarousel"
+							data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" class="indicator-button" data-bs-target="#researchCarousel"
+							data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" class="indicator-button" data-bs-target="#researchCarousel"
+							data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" class="indicator-button" data-bs-target="#researchCarousel"
+							data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="5000">
+							<img src="../img/tech.png" class='d-block w-100' alt="...">
+						</div>
+
+						<div class="carousel-item" data-bs-interval="5000">
+							<img src="../img/web.png" class='d-block w-100' alt="...">
+						</div>
+
+						<div class="carousel-item" data-bs-interval="5000">
+							<img src="../img/mapstudy.jpg" class='d-block w-100' alt="...">
+						</div>
+
+						<div class="carousel-item" data-bs-interval="5000">
+							<img src="../img/vizVariables.png" class='d-block w-100' alt="...">
+						</div>
+					</div>
+
+
+					<!-- Left and right controls -->
+					<button class="carousel-control-prev" data-bs-target="#researchCarousel" type="button"
+						data-bs-slide="prev">
+						<span class="fa fa-chevron-left fa-2x" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" data-bs-target="#researchCarousel" type="button"
+						data-bs-slide="next">
+						<span class="fa fa-chevron-right fa-2x" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<!--end carousel -->
+			</div>
+		</div>
+	</div>
+
+
+	<div class='container'>
+		<div class='row overview'>
+			<div class='col-md-8'>
+
+				<h2>User Experience & User Interface (UX/UI) Design</h2>
+
+				<p>
+					Increasingly, cartographers need both to <i>encode</i> geographic information as well as <i>code</i>
+					a useful and usable interface for exploring the resulting maps. But interface design is much more
+					than pushing 0s and 1s, and few time-tested principles exist to inform design of the user
+					experience. Increasingly, we contribute to interaction science, approaching topics such as
+					cartographic interaction primitives (i.e., the building blocks of an interactive map), interface
+					flexibility versus constraint, user expertise and motivation, coordinated multiview
+					geovisualization, and applications of interactive mapping to support geography.
+				</p>
+
+			</div>
+
+			<div class='col-md-4'>
+				<h3><a href="publications.html">All Publications</a></h3>
+				<h3>Research</h3>
+
+				<p><a href="cartographicDesign.html">Cartographic Design</a><br>
+					<a href="UIUX.html">UI/UX Design</a><br>
+					<a href="webMobile.html">Web & Mobile Map Design</a><br>
+					<a href="UCD.html">Usability Engineering & UCD</a><br>
+					<a href="visualStorytelling.html">Visual Storytelling</a><br>
+					<a href="pedagogy.html">Pedagogical Research</a><br>
+					<a href="mapstudy.html">Mapstudy</a><br>
+					<a href="../../github.html">Github Projects</a><br>
+
+					<!--
+						<a href="orgManagement.html">Organizational Management</a><br>
+					-->
+
+			</div>
+		</div>
+	</div>
+
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-12'>
+				<h2>Research projects in <i>UI/UX Design</i></h2>
+				<div id='results'>
+					<ol>
+						<a href="../../projects/publications/Roth_2012_CJ.pdf" target="_blank">
+							<li>
+								<strong>Roth RE</strong>. 2012. Cartographic Interaction Primitives: Framework and
+								Synthesis <em>The Cartographic Journal</em>. 49(4):376-395. [uncorrected pre-print]
+							</li>
+
+						</a>
+
+						<a href="../../projects/publications/Roth_2012_CJ.pdf" target="_blank">
+							<li>
+								<strong>Roth RE</strong>. 2012. Cartographic Interaction Primitives: Framework and
+								Synthesis <em>The Cartographic Journal</em>. 49(4):376-395. [uncorrected pre-print]
+							</li>
+
+						</a>
+
+						<a href="../../projects/publications/Roth_2013_TVCG.pdf" target="_blank">
+							<li>
+								<strong>Roth RE</strong>. 2013. An empirically-derived taxonomy of interaction
+								primitives for Interactive Cartography and Geovisualization <em>Transactions on
+									Visualization & Computer Graphics</em>. 19(12): 2356-2365. [uncorrected pre-print]
+							</li>
+						</a>
+
+						<a
+							href="../../projects/StudentTheses/Vincent_2017_TheRoleOfCartographicInterfaceComplexityOnSpatialDecisionMaking.pdf">
+							<li><strong>Vincent K. </strong>2017. The Role of Cartographic Interface Complexity on
+								Spatial Decision Making: A Case Study in the North American Hazardous Waste Trade | MS
+								Thesis in Cartography and GIS. University of Wisconsin-Madison: Madison, WI.</li>
+						</a>
+
+						<a
+							href="../../projects/StudentTheses/Tolochko_2016_ContemporaryProfessionalPracticesInInteractiveWebMapDesign.pdf">
+							<li><strong> Tolochko T. </strong> 2016. Contemporary Professional Practices in Interactive
+								Web Map Design | MS Thesis in Cartography and GIS. University of Wisconsin-Madison:
+								Madison, WI.</li>
+						</a>
+					</ol><br>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<site-footer-2></site-footer-2>
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"
+		integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="../../js/bootstrap.js" type="text/javascript"></script>
+
+	<script src="../../js/jquery.cookie.js" type="text/javascript">
+	</script>
+	<script src="../../js/jquery.ba-cond.min.js" type="text/javascript">
+	</script>
+	<script src="../../js/jquery.slitslider.js" type="text/javascript">
+	</script>
+	<script src="../../js/jquery.prettyPhoto.js" type="text/javascript">
+	</script>
+	<script src="../../js/custom.js" type="text/javascript">
+	</script>
+	<script src="../../js/main.js" type="text/javascript">
+	</script>
+	<script src="../../js/html_templates.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
