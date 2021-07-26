@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <title>CartLabDB Resource Authorization</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<style>
+html, body{
+  height: 100%;
+  max-height: 100% !important;
+}
+#main{
+  height: 100%;
+}
+#resourceDiv{
+  height:100%
+}
+  #theFile{
+    height: 75%;
+    width: 100%;
+  }
+  .links{
+    float: right;
+  }
+  #footer{
+    text-align:center;
+    bottom:5px;
+    position: absolute;
+  }
+</style>
+  </head>
+
+  <body>
+    <a href="upload.html" class='links'>Upload Form</a>
+    <h1 class='page-header'>UW Cartography Resource Search</h1>
+    <div class='col-xs-3'>
+    <label>Query</label><input type='text' id='searchbar' class='form-control' placeholder='Search Anything...'/><br />
+    <label>Author</label><input type='text' id='authorSearch' class='form-control' placeholder='Search For Authors'/><br/>
+    <label>Category</label><select id='categorySelect' class='form-control'></select><br />
+    <label>File Type</label><select id='mediaSelect' class='form-control'></select><br />
+    <label>Created Before</label><input type='date' class='form-control' id='maxDate'/ /><br />
+    <label>Created After</label><input type='date' class='form-control' id='minDate' /><br />
+    <label>Title</label><input type='text' id='titleSearch' class='form-control' placeholder="Search By Title..." /><br />
+    <label>Journal</label><input type='text' id='journalSearch' class='form-control' placeholder='Search By Academic Journal...'/ /><br />
+    <label>Publication Year</label><input type='number'  class='form-control' id='pubYearSearch' placeholder="Search By Publication Year..."/><br />
+
+  </br/>
+    <h6>Sort By:</h6>
+    <input type='radio' name='sortBy' id='sortByAlpha' value='title' checked="true"/><label>Alphabetical (title)</label><br / />
+    <input type='radio' name='sortBy' id='sortByDate' value='date' /><label>Most Recent</label><br / />
+    <button class='btn btn-primary' id='search'>Search</button>
+    </div>
+    <div class='col-xs-9 container'>
+    <div id='results'>
+
+    </div>
+  </div>
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script>
+globals = {};
+globals.hosts = {
+  categories : "http://cartlabserver.shc.wisc.edu:8080/categories",
+  search : "http://cartlabserver.shc.wisc.edu:8080/search",
+  post : "http://cartlabserver.shc.wisc.edu:8080/upload",
+  mediaTypes : "http://cartlabserver.shc.wisc.edu:8080/mediatypes"
+}
+function getCategories(populate){
+  $.getJSON(globals.hosts.categories, function(data){
+    globals.categories = data
+    if (populate){
+      //populate the dropdown menu
+      $("#categorySelect").empty()
+      categoryData = data['data']
+      $("#categorySelect").append("<option value='all'>--All--</option>")
+      for (var i = 0; i < categoryData.length; i++){
+        html = "<option value='" +categoryData[i]['categorytext'] + "'>" + categoryData[i]['categorytext'] + "</option>"
+        $("#categorySelect").append(html)
+      }
+    }
+  })
+}
+function getAllowedMediaTypes(){
+  //get the list of media types that we are allowed to upload to the server
+  $.getJSON(globals.hosts.mediaTypes, function(data){
+    globals.mediaTypes = data['data']
+    globals.mediaChecklist = []
+    $("#mediaSelect").empty()
+    $("#mediaSelect").append("<option value='all'>--All--</option>")
+    for (var i=0; i<globals.mediaTypes.length; i++){
+      mime = globals.mediaTypes[i]['mimetype']
+      desc = globals.mediaTypes[i]['description']
+      html = "<option value='" + mime + "'>" + desc + "</option>"
+      $("#mediaSelect").append(html)
+    }
+  })
+}
+$(document).ready(function(){
+  getAllowedMediaTypes();
+  getCategories(true);
+  $("#search").click(search)
+})
+
+function search(){
+  //get the values to search for
+  sortBy = $("input[name=sortBy]:checked").val()
+  payload = {
+    sortBy: sortBy,
+    contentType: "html",
+  }
+  q = $("#searchbar").val();
+  if (q){
+    payload['q'] = q
+  }
+  authorQuery = $("#authorSearch").val()
+  if (authorQuery){
+    payload['author'] = authorQuery
+  }
+  category = $("#categorySelect option:selected").val();
+  if (category != 'all'){
+    payload['category'] = category
+  }
+  fileType = $("#mediaSelect option:selected").val();
+  if (fileType != 'all'){
+    payload['fileType'] = encodeURI(fileType)
+  }
+  minDate = $("#minDate").val();
+  if (minDate){
+    console.log(minDate)
+    payload['minDate'] = minDate
+  }
+  maxDate = $("#maxDate").val();
+  if (maxDate){
+    payload['maxDate'] = maxDate
+  }
+  title = $("#titleSearch").val();
+  if (title){
+    payload['title'] = title
+  }
+  journal = $("#journalSearch").val();
+  if (journal){
+    payload['journal'] = journal
+  }
+  pubYear = $("#pubYearSearch").val();
+  if (pubYear){
+    payload['pubYear'] = pubYear
+  }
+  //do the search via ajax
+  $.ajax(globals.hosts.search,{
+    data: payload,
+    // contentType: "text/html",
+    // dataType: "json",
+    success: function(html){
+      $("#results").empty();
+      $("#results").append(html)
+    },
+    error: function(err){
+      console.log(err)
+    },
+    beforeSend: function(){
+      console.log(payload)
+      console.log(this.url)
+    }
+  })
+}
+
+
+</script>
+  </body>
+  </html>
