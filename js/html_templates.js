@@ -77,7 +77,7 @@ class Footer extends HTMLElement {
                             <div class="align-center">
                                 <br>
                                 <img src="` + level +`img/UWCL_logo_gray.png">
-                                <p>Copyright 2019&copy; All Rights Reserved.</p>
+                                <p>Copyright 2021&copy; All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>
