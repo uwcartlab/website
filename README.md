@@ -18,6 +18,8 @@ Welcome to the official Github of the UW Cartography Lab! This is where the lab 
     * Figure and data archive for [Mapping a Sustainable World](https://digitallibrary.un.org/record/3898826), an open access cartography book teaching the principles of cartography through the United Nations’ 17 Sustainable Development Goals (SDGs).
 - ### [Mapping SDG: QGIS Supplement](https://github.com/uwcartlab/MappingSDGsTechnicalSupplement) ###
     * Using the data from [Mapping a Sustainable World](https://digitallibrary.un.org/record/3898826), these tutorials demonstrating map design using the open access mapping software QGIS.
+- ### [GEOG 575 Project Archive](https://github.com/uwcartlab/G575_Archive) ###
+    * Archive for student projects from GEOG 575: Interactive Cartography and Geovisualization.
 - ### [Global Madison](https://github.com/uwcartlab/GlobalMadison) ###
     * Source code for the (Global Madison)[https://geography.wisc.edu/globalmadison/#] instructional app.
 - ### [Tambopata Website](https://github.com/uwcartlab/tambopata) ###
