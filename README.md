@@ -1,3 +1,5 @@
+![Cart Lab Logo](img/logos/CartLab_logo1.png)
+
 # UW Cartography Lab
 Welcome to the official Github of the UW Cartography Lab! This is where the lab creates and archives web projects, and makes all associated source code public. The Table of Contents below lists individual repositories, along with brief descriptions. You can also visit the [root](https://github.com/uwcartlab/website) to view a full listing. 
 
