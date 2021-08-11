@@ -491,8 +491,9 @@ a div.col-md-4.col-sm-6 p {
 }
 
 
-
 .carousel575{
+    width:100%;
+    padding: 0 10%;
 }
 
 /*Do not change or carousel for 575 will fail */
