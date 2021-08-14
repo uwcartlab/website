@@ -1,12 +1,40 @@
 (function(){
 
 /////////////GLOBAL VARIABLES////////////
-    var searchData, idx;
+    var searchData, idx, pages = [];
+
+    function loadXMLDoc(theURL)
+    {
+        console.log(theURL)
+        if (window.XMLHttpRequest)
+            {// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
+                xmlhttp=new XMLHttpRequest();
+            }
+
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    pages.push(xmlhttp.responseText)
+                }
+        }
+        xmlhttp.open("GET", theURL, false);
+        xmlhttp.send();
+    }
 
 /////////////CREATE SEARCH INDEX////////////
     function createIndex(){
         $.getJSON("js/search.json", function(data){
             searchData = data;
+
+            data.forEach(function(d,i){
+                loadXMLDoc(d.url);
+                //searchData[i].content = $("<div>").html(pages[i]).text();
+                searchData[i].content = pages[i];
+            })
+
+            console.log(searchData)
+
             idx = lunr(function () {
                 this.field('title')
                 this.field('content')
@@ -57,15 +85,15 @@
 
 /////////////POPULATE RESULTS////////////
     var buildSearchResult = function (doc) {
-        let content = doc.content,
+        /*let content = doc.content,
             length = 500;
 
-        content = content.substr(0,length);
+        content = content.substr(0,length);*/
 
         let li = $('<li>'),
             h2 = $('<h2>'),
             a = $('<a>').prop("href",doc.url).html(doc.title),
-            p = $('<p>').html(content + "... "),
+            p = $('<p>').html(/*content + */"... "),
             readMore = $('<a>').prop("href",doc.url).html("Read More");
 
         h2.append(a);

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title>G575 Example Page</title>
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+        
+    </head>
+
+    <body>
+		<!-- Map (and minimap for example 7) -->
+		<div id="map">
+			<div id="minimap"></div>
+		</div>
+
+		<!-- Buttons for example selection. Link can also end in '/?ex=' and a number to open to specific example -->
+		<ul class="ui">
+			<li>
+				<a  id="1" class="active" onclick="displayExample(1)">
+					Grab and Drag
+				</a>
+			</li>
+			<li>
+				<a id="2" onclick="displayExample(2)">
+					Zoom and Recenter
+				</a>
+			</li>
+			<li>
+				<a id="3" onclick="displayExample(3)">
+					Zoom Box
+				</a>
+			</li>
+			<li>
+				<a id="4" onclick="displayExample(4)">
+					Smart Scroll Bar
+				</a>
+			</li>
+			<li>
+				<a id="5" onclick="displayExample(5)">
+					Navigator Tabs
+				</a>
+			</li>
+			<li>
+				<a id="6" onclick="displayExample(6)">
+					Keyboard Controls
+				</a>
+			</li>
+			<li>
+				<a id="7" onclick="displayExample(7)">
+					Navigator Window
+				</a>
+			</li>
+		</ul>
+
+		<!-- Divs for replacing text/content for each example -->
+		<h1 class="ui" id="example-name"><b>Grab and Drag</b></h1>
+		<p class="ui" id="example-desc">Click and drag directly on the map to reposition it. Scroll to zoom in and out.</p>
+
+		<!-- Buttons used for example 5 -->
+		<button id="pan-up" onclick="pan(0)"></button>
+		<button id="pan-down" onclick="pan(1)"></button>
+		<button id="left" onclick="pan(2)"></button>
+		<button id="right" onclick="pan(3)"></button>
+		
+		<!-- the libraries used -->
+		<script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		
+		<!-- my main script-->
+		<script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

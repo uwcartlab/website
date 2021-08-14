@@ -20,9 +20,11 @@ Welcome to the official Github of the UW Cartography Lab! This is where the lab 
     * Using the data from [Mapping a Sustainable World](https://digitallibrary.un.org/record/3898826), these tutorials demonstrating map design using the open access mapping software QGIS.
 - ### [GEOG 575 Project Archive](https://github.com/uwcartlab/G575_Archive) ###
     * Archive for student projects from GEOG 575: Interactive Cartography and Geovisualization.
+- ### [Coastal Erosion](https://github.com/uwcartlab/coastal-erosion) ###
+    * Coastal erosion calculator for the Lake Michigan shoreline in Central Wisconsin. The full site can be viewed [here](https://uwcartlab.github.io/coastal-erosion/). 
 - ### [Global Madison](https://github.com/uwcartlab/GlobalMadison) ###
     * Source code for the (Global Madison)[https://geography.wisc.edu/globalmadison/#] instructional app.
 - ### [Tambopata Website](https://github.com/uwcartlab/tambopata) ###
-    * Instructional README to guide the developer into editing/updating the [Tambopata](https://geography.wisc.edu/tambopata/) website
+    * Instructional README to guide the developer into editing/updating the [Tambopata](https://geography.wisc.edu/tambopata/) website.
 - ### [Flyover Country Visualization Suite](https://github.com/uwcartlab/FCVS) ###
     * The Flyover Country Visualization Suite (FCVS) is a multivariate visualization Javascript library currently built on Leaflet for integration into the (Flyover Country)[https://flyovercountry.io/] mobile app.

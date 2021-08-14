@@ -2,19 +2,283 @@
     {
         "id":0,
         "url":"index.html",
-        "title":"Home Page",
-        "content":"This is the content of the home page github. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title":"Home"
     },
     {
         "id":1,
         "url":"github.html",
-        "title":"Github",
-        "content":"Here is where you can find info about our github projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title":"Github"
     },
     {
         "id":2,
         "url":"contact.html",
-        "title":"Contact",
-        "content":"Do you wish to contact us? Check this out. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title":"Contact"
+    },
+    {
+        "id":3,
+        "url":"sitemap.html",
+        "title":"Sitemap"
+    },
+    {
+        "id":4,
+        "url":"education/CLES.html",
+        "title":"CLES"
+    },
+    {
+        "id":5,
+        "url":"education/curriculum.html",
+        "title":"Curriculum"
+    },
+    {
+        "id":6,
+        "url":"education/DC2019.html",
+        "title":"Design Challenge 2019"
+    },
+    {
+        "id":7,
+        "url":"education/designChallenge.html",
+        "title":"Design Challenge"
+    },
+    {
+        "id":8,
+        "url":"education/eduResources.html",
+        "title":"Educational Resources"
+    },
+    {
+        "id":9,
+        "url":"education/G170.html",
+        "title":"Geog 170: Our Digital Globe"
+    },
+    {
+        "id":10,
+        "url":"education/G970.html",
+        "title":"Geog 970: Seminar"
+    },
+    {
+        "id":11,
+        "url":"education/index.html",
+        "title":"Education"
+    },
+    {
+        "id":12,
+        "url":"education/QGISTutorials.html",
+        "title":"QGIS Tutorials"
+    },
+    {
+        "id":13,
+        "url":"education/sdg.html",
+        "title":"Mapping for a Sustainable World"
+    },
+    {
+        "id":14,
+        "url":"education/webmapping.html",
+        "title":"Web Mapping Workbook"
+    },
+    {
+        "id":15,
+        "url":"education/G370/G370FA2011.html",
+        "title":"GEOG 370 Fall 2011"
+    },
+    {
+        "id":16,
+        "url":"education/G370/G370FA2012.html",
+        "title":"GEOG 370 Fall 2012"
+    },
+    {
+        "id":17,
+        "url":"education/G370/G370FA2013.html",
+        "title":"GEOG 370 Fall 2013"
+    },
+    {
+        "id":18,
+        "url":"education/G370/G370FA2014.html",
+        "title":"GEOG 370 Fall 2014"
+    },
+    {
+        "id":19,
+        "url":"education/G370/G370FA2015.html",
+        "title":"GEOG 370 Fall 2015"
+    },
+    {
+        "id":20,
+        "url":"education/G370/G370FA2018.html",
+        "title":"GEOG 370 Fall 2018"
+    },
+    {
+        "id":21,
+        "url":"education/G370/G370FA2019.html",
+        "title":"GEOG 370 Fall 2019"
+    },
+    {
+        "id":22,
+        "url":"education/G370/G370FA2020.html",
+        "title":"GEOG 370: Introduction to Cartography"
+    },
+    {
+        "id":23,
+        "url":"education/G370/G370SP2012.html",
+        "title":"GEOG 370 Spring 2012"
+    },
+    {
+        "id":24,
+        "url":"education/G370/G370SP2016.html",
+        "title":"GEOG 370 Spring 2016"
+    },
+    {
+        "id":25,
+        "url":"education/G370/G370SP2019.html",
+        "title":"GEOG 370 Spring 2019"
+    },
+    {
+        "id":26,
+        "url":"education/G572/G572FA2012.html",
+        "title":"GEOG 572 Fall 2012"
+    },
+    {
+        "id":27,
+        "url":"education/G572/G572FA2013.html",
+        "title":"GEOG 572 Fall 2013"
+    },
+    {
+        "id":28,
+        "url":"education/G572/G572FA2015.html",
+        "title":"GEOG 572 Fall 2015"
+    },
+    {
+        "id":29,
+        "url":"education/G572/G572FA2017.html",
+        "title":"GEOG 572 Fall 2017"
+    },
+    {
+        "id":30,
+        "url":"education/G572/G572FA2018.html",
+        "title":"GEOG 572 Fall 2018"
+    },
+    {
+        "id":31,
+        "url":"education/G572/G572FA2019.html",
+        "title":"GEOG 572 Fall 2019"
+    },
+    {
+        "id":32,
+        "url":"education/G572/G572FA2020.html",
+        "title":"GEOG 572: Graphic Design in Cartography"
+    },
+    {
+        "id":33,
+        "url":"education/G575/G575SP2012.html",
+        "title":"GEOG 575 Spring 2012"
+    },
+    {
+        "id":34,
+        "url":"education/G575/G575SP2013.html",
+        "title":"GEOG 575 Spring 2013"
+    },
+    {
+        "id":35,
+        "url":"education/G575/G575SP2016.html",
+        "title":"GEOG 575 Spring 2016"
+    },
+    {
+        "id":36,
+        "url":"education/G575/G575SP2019.html",
+        "title":"GEOG 575 Spring 2019"
+    },
+    {
+        "id":37,
+        "url":"education/G575/G575SP2020.html",
+        "title":"GEOG 575 Spring 2020"
+    },
+    {
+        "id":38,
+        "url":"education/G575/G575SP2021.html",
+        "title":"GEOG 575: Interactive Cartography and Geovisualization"
+    },
+    {
+        "id":39,
+        "url":"people/Buckingham.html",
+        "title":"Tanya Andersen"
+    },
+    {
+        "id":40,
+        "url":"people/index.html",
+        "title":"People"
+    },
+    {
+        "id":41,
+        "url":"people/Roth.html",
+        "title":"Robert Roth"
+    },
+    {
+        "id":42,
+        "url":"production/index.html",
+        "title":"Production"
+    },
+    {
+        "id":43,
+        "url":"production/interactive.html",
+        "title":"Interactive Production"
+    },
+    {
+        "id":44,
+        "url":"production/print.html",
+        "title":"Print Production"
+    },
+    {
+        "id":46,
+        "url":"research/index.html",
+        "title":"Production"
+    },
+    {
+        "id":47,
+        "url":"research/Roth_Presentations.html",
+        "title":"Robert Roth Presentations"
+    },
+    {
+        "id":48,
+        "url":"research/Roth_Publications.html",
+        "title":"Robert Roth Presentations"
+    },
+    {
+        "id":49,
+        "url":"research/areas/cartographicDesign.html",
+        "title":"Cartographic Design"
+    },
+    {
+        "id":50,
+        "url":"research/areas/mapstudy.html",
+        "title":"Mapstudy"
+    },
+    {
+        "id":51,
+        "url":"research/areas/pedagogy.html",
+        "title":"Pedagogy"
+    },
+    {
+        "id":52,
+        "url":"research/areas/publications.html",
+        "title":"Publications"
+    },
+    {
+        "id":53,
+        "url":"research/areas/UCD.html",
+        "title":"User-Centered Design"
+    },
+    {
+        "id":54,
+        "url":"research/areas/UIUX.html",
+        "title":"User Interface/User Experience"
+    },
+    {
+        "id":55,
+        "url":"research/areas/visualStorytelling.html",
+        "title":"Visual Storytelling"
+    },
+    {
+        "id":56,
+        "url":"research/areas/webMobile.html",
+        "title":"Web and Mobile Cartography"
     }
 ]
+
+               

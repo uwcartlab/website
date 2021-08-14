@@ -19,6 +19,7 @@ function determineLevel(){
         }
     })
 }
+
 determineLevel();
 
 class Header extends HTMLElement {
