@@ -1,3 +1,7 @@
+body{
+    overflow-x:hidden;
+}
+
 .noRed{
     color:black !important;
 }
@@ -2018,6 +2022,7 @@ ul.footer-list li a:hover {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	body { width: auto; margin: 0; }
 	.container { margin: 0; }
+	.row { width: 100%; margin-left: auto; margin-right: auto;}
 	.mobile-only {width: auto;}
 	.mobile-only img {width: 100%;}
 	.mobile-center { text-align: center !important; }
@@ -2035,6 +2040,7 @@ ul.footer-list li a:hover {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 	body { width: auto; margin: 0; }
+	.row { width: 90%; margin-left: auto; margin-right: auto;}
 	.mobile-only {width: auto; display: block;}
 	.mobile-only img {width: 100%;}
 	.mobile-center { text-align: center !important; }
@@ -2061,6 +2067,7 @@ ul.footer-list li a:hover {
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	body { width: auto; margin: 0; }
+	.row { width: 90%; margin-left: auto; margin-right: auto;}
 	.mobile-nav { width: 100%; display: block; }
 	.no-mobile { display: none; }
 	.mobile-center { text-align: center !important; }
@@ -2081,6 +2088,7 @@ ul.footer-list li a:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	body { width: auto; margin: 0; }
+	.row { width: 90%; margin-left: auto; margin-right: auto;}
 	.mobile-nav { width: 100%; display: block; }
 	.no-mobile { display: none; }
 	.mobile-center { text-align: center !important; }
