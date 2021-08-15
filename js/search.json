@@ -225,57 +225,57 @@
         "title":"Print Production"
     },
     {
-        "id":46,
+        "id":45,
         "url":"research/index.html",
         "title":"Production"
     },
     {
-        "id":47,
+        "id":46,
         "url":"research/Roth_Presentations.html",
         "title":"Robert Roth Presentations"
     },
     {
-        "id":48,
+        "id":47,
         "url":"research/Roth_Publications.html",
-        "title":"Robert Roth Presentations"
+        "title":"Robert Roth Publications"
     },
     {
-        "id":49,
+        "id":48,
         "url":"research/areas/cartographicDesign.html",
         "title":"Cartographic Design"
     },
     {
-        "id":50,
+        "id":49,
         "url":"research/areas/mapstudy.html",
         "title":"Mapstudy"
     },
     {
-        "id":51,
+        "id":50,
         "url":"research/areas/pedagogy.html",
         "title":"Pedagogy"
     },
     {
-        "id":52,
+        "id":51,
         "url":"research/areas/publications.html",
         "title":"Publications"
     },
     {
-        "id":53,
+        "id":52,
         "url":"research/areas/UCD.html",
         "title":"User-Centered Design"
     },
     {
-        "id":54,
+        "id":53,
         "url":"research/areas/UIUX.html",
         "title":"User Interface/User Experience"
     },
     {
-        "id":55,
+        "id":54,
         "url":"research/areas/visualStorytelling.html",
         "title":"Visual Storytelling"
     },
     {
-        "id":56,
+        "id":55,
         "url":"research/areas/webMobile.html",
         "title":"Web and Mobile Cartography"
     }

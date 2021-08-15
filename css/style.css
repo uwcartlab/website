@@ -800,8 +800,37 @@ nav.navigation select {
 }
 
 /* ==========================================================================
-   Search Bar
+   Search 
    ========================================================================== */
+   @media only screen and (min-width: 768px) {
+        #search-container{
+            display:none;
+        }
+        .spyglass{
+            display:inline !important;
+        }
+        #search-container{
+            position:absolute;
+            top:55px;
+            height:35px;
+            width:250px;
+            background:#b70101;
+            padding:0px 10px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .spyglass{
+            display:none !important;
+        }
+        #search-container{
+            display:block;
+        }
+        #search-form{
+            width:100%;
+            margin: 10px 0; 
+            height:35px;
+        }
+    }
 
    .navbar-search{
        padding:0 10px !important;
@@ -809,7 +838,20 @@ nav.navigation select {
    mark{
         background: #b70101;
     }
-
+    .spyglass:hover{
+        cursor:pointer;
+    }
+    .loadingText{
+        width:100%;
+        text-align:center;
+        margin-top:50px;
+    }
+    #results{
+        margin-top:25px;
+    }
+    #search-container{
+        margin-right:10px;
+    }
 
 /* ==========================================================================
    Team List
@@ -1976,7 +2018,6 @@ ul.footer-list li a:hover {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	body { width: auto; margin: 0; }
 	.container { margin: 0; }
-	.row { width: 100%; margin-left: auto; margin-right: auto;}
 	.mobile-only {width: auto;}
 	.mobile-only img {width: 100%;}
 	.mobile-center { text-align: center !important; }
@@ -1994,7 +2035,6 @@ ul.footer-list li a:hover {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 	body { width: auto; margin: 0; }
-	.row { width: 90%; margin-left: auto; margin-right: auto;}
 	.mobile-only {width: auto; display: block;}
 	.mobile-only img {width: 100%;}
 	.mobile-center { text-align: center !important; }
@@ -2021,7 +2061,6 @@ ul.footer-list li a:hover {
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	body { width: auto; margin: 0; }
-	.row { width: 90%; margin-left: auto; margin-right: auto;}
 	.mobile-nav { width: 100%; display: block; }
 	.no-mobile { display: none; }
 	.mobile-center { text-align: center !important; }
@@ -2042,7 +2081,6 @@ ul.footer-list li a:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	body { width: auto; margin: 0; }
-	.row { width: 90%; margin-left: auto; margin-right: auto;}
 	.mobile-nav { width: 100%; display: block; }
 	.no-mobile { display: none; }
 	.mobile-center { text-align: center !important; }

@@ -38,7 +38,10 @@ class Header extends HTMLElement {
                         <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="myNavbar">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <input id="search-form" class="form-control me-2 navbar-search" type="search" placeholder="Search" aria-label="Search">
+                                    <i id="navText" class="spyglass fa fa-search"></i>
+                                    <div id="search-container">
+                                        <input id="search-form" class="form-control me-2 navbar-search" type="search" placeholder="Search" aria-label="Search">
+                                    </div
                                 </li>
                                 <li class="nav-item">
                                     <a href="` + level +`production/index.html" id="navText">Production</a>

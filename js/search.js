@@ -2,51 +2,69 @@
 
 /////////////GLOBAL VARIABLES////////////
     var searchData, idx, pages = [];
-
-    function loadXMLDoc(theURL)
-    {
-        console.log(theURL)
-        if (window.XMLHttpRequest)
-            {// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
-                xmlhttp=new XMLHttpRequest();
-            }
-
-        xmlhttp.onreadystatechange=function()
-        {
-            if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                    pages.push(xmlhttp.responseText)
-                }
+    //create DOM parser to strip html files from text
+    var parser = new DOMParser();
+    //create counter to fire once all html documents have been loaded and parsed
+    var docCounter = {
+        aInternal: 0,
+        aListener: function(val) {},
+        set a(val) {
+          this.aInternal = val;
+          this.aListener(val);
+        },
+        get a() {
+          return this.aInternal;
+        },
+        registerListener: function(listener) {
+          this.aListener = listener;
         }
-        xmlhttp.open("GET", theURL, false);
-        xmlhttp.send();
-    }
+    }   
 
-/////////////CREATE SEARCH INDEX////////////
-    function createIndex(){
-        $.getJSON("js/search.json", function(data){
-            searchData = data;
-
-            data.forEach(function(d,i){
-                loadXMLDoc(d.url);
-                //searchData[i].content = $("<div>").html(pages[i]).text();
-                searchData[i].content = pages[i];
-            })
-
-            console.log(searchData)
-
+/////////////CREATE SEARCH INDEX ONCE ALL HTML FILES HAVE BEEN LOADED/PARSED////////////
+    docCounter.registerListener(function(val) {
+        if (val == searchData.length){
             idx = lunr(function () {
                 this.field('title')
                 this.field('content')
                 this.field('url')
                 
-                data.forEach(function (doc) {
+                searchData.forEach(function (doc) {
                     this.add(doc)
                 }, this)
             })     
-
+            
             var results = idx.search(search);
             newSearch(results);
+
+            $('#loading').hide();
+        }
+    });
+      
+/////////////LOAD AND PARSE HTML FILES////////////
+    function loadHtml(url, index)
+    {
+        $.ajax({
+            dataType: "html",
+            url: url,
+            success: success
+        });
+
+        function success(data){
+            let temp = parser.parseFromString(data, "text/html");
+            searchData[index].content = temp.documentElement.textContent; 
+            //searchData[index].content = data;
+            docCounter.a++;
+        }
+    }
+
+/////////////LOAD JSON SEARCH INDEX////////////
+    function createIndex(){
+        $.getJSON("js/search.json", function(data){
+            searchData = data;
+
+            data.forEach(function(d,i){
+                loadHtml(d.url, i);
+            })
 
         })
     }
@@ -57,8 +75,9 @@
             results.forEach(function(result){
                 var doc = searchData[result.ref],
                     li = buildSearchResult(doc);
+
                 $('#results').append(li);
-                    
+
                 var options = {},
                     instance = li.mark(search, options);
             })   

@@ -40,6 +40,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet'
     type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Javascript
 	================================================== -->
@@ -66,6 +67,9 @@
         <div class='col-md-12'>
             <h1 class='page-header'>Search</h1>
             <input id="search-page-form" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <div id="loading">
+              <h2 class="loadingText"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i><span class="sr-only">Loading...</span></h2>
+            </div>
             <div id="results"></div>
         </div>
     </div>
