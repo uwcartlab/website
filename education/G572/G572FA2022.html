@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+	<!-- Basic Page Needs
+================================================== -->
+	<meta charset="utf-8">
+	<title>UWCL</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<style>
+		#results {
+			min-height: 100% !important;
+			overflow: auto;
+			margin-bottom: 50px !important;
+			padding-bottom: 50px !important;
+		}
+
+		#ajaxloader {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		ol li:before {
+			background-color: none !important;
+		}
+
+		footer {
+			margin-top: 50px;
+		}
+
+		.d-block w-100 {
+			position: relative;
+			margin-right: 0% !important;
+			margin-left: 22.5% !important;
+			padding: 0px !important;
+		}
+
+		.carousel-inner>.item>img {
+			margin: 0 auto !important;
+		}
+
+		.edu {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.course {
+			padding-bottom: 50px;
+		}
+	</style>
+
+	<!-- Mobile Specific Metas
+================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+================================================== -->
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+	<!-- Fonts
+================================================== -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Javascript
+================================================== -->
+	<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
+
+	<!-- Favicons
+================================================== -->
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
+
+</head>
+
+<body>
+	<!--Collapsing NavBar -->
+	<site-header></site-header>
+	<!--end of header -->
+	<div class='container'>
+		<div class='col-md-12'>
+
+			<h1 class='page-header'>Education <i>Courses</i></h1>
+
+			<div id="productionCarousel" class="carousel slide" data-ride="carousel">
+
+				<!-- Indicators -->
+				<div class="carousel-indicators">
+					<button type="button" class="indicator-button active" data-bs-target="#productionCarousel"
+						data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="3" aria-label="Slide 4"></button>
+				</div>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+
+					<div class="carousel-item active" data-bs-interval="5000">
+						<img src="2022FA/ImgWide/FA2022_chamberlain.png" class='d-block w-100' alt="...">
+					</div>
+
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="2022FA/ImgWide/FA2022_michalski.png" class='d-block w-100' alt="...">
+					</div>
+
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="2022FA/ImgWide/FA2022_steinberg.png" class='d-block w-100' alt="...">
+					</div>
+
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="2022FA/ImgWide/FA2022_maurer.png" class='d-block w-100' alt="...">
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<button class="carousel-control-prev" data-bs-target="#productionCarousel" type="button"
+					data-bs-slide="prev">
+					<span class="fa fa-chevron-left fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" data-bs-target="#productionCarousel" type="button"
+					data-bs-slide="next">
+					<span class="fa fa-chevron-right fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+
+			</div>
+		</div>
+	</div>
+
+	<div class='container'>
+		<div class='row overview'>
+
+			<div class='col-md-8'>
+
+				<div class='course'>
+
+					<h2>Geography 572: Graphic Design in Cartography</h2>
+
+					<p>This course provides an in-depth examination of advanced topics in cartographic representation,
+						or the graphics, sounds, haptics, etc., constituting a map that are employed to encode
+						geographic information. It is a direct extension of 370, but with a focus on cartographic design
+						for the web rather than print, and draws upon research and practice on graphic design, web
+						design, and art. Specifically, it integrates theory on both mapmaking and map use (compared to
+						170 or 370, which focus upon one or the other) and emphasizes design of web-delivered static
+						maps, rather than the design of interfaces for manipulating these maps (compared to 575). The
+						course is divided into two components: lectures and labs.</p>
+
+					<p>Check out past syllabi and finals projects below!</p>
+
+					<h2>Fall 2022</h2>
+					<p>Instructor: Robert Roth<br>
+						TA: Gareth Baldrica-Franklin</p>
+					<h3 class='page-header'><a href="../../projects/syllabi/G572_Fall2020_.pdf" target="_block">Fall 2020
+							Syllabus</a></h3>
+
+				</div>
+			</div>
+
+			<div class='col-md-4'>
+				<h3>Education</h3>
+
+				<div>
+					<p>
+						<a href="../curriculum.html">Curriculum Overview</a><br>
+						<a href="../G370/G370FA2021.html">G370: Introduction to Cart</a><br>
+						<a href="G572FA2022.html">G572: Graphic Design</a><br>
+						<a href="../G575/G575SP2022.html">G575: Interactive Cart</a><br>
+						<a href="../G970.html">G970: Cartography Seminar</a><br>
+						<a href="../webmapping.html">Web Mapping Workbook</a><br>
+						<a href="../sdg.html">Mapping for a Sustainable World Textbook</a><br>
+						<a href="../QGISTutorials.html">QGIS Open Source Tutorials</a><br>
+						<a href="../designChallenge.html">Design Challenge</a><br>
+						<a href="../CLES.html">Cart Lab Education Series (CLES)</a><br>
+						<a href="../eduResources.html">Educational Resources</a><br>
+						<a href="../../github.html">Github Projects</a><br>
+						<a href="../../contact.html">Contact Us</a><br>
+
+				</div>
+				<h3>Final Projects</h3>
+
+				<div>
+					<p>
+						<a href="G572FA2022.html">Fall 2022</a><br>
+						<a href="G572FA2020.html">Fall 2020</a><br>
+						<a href="G572FA2019.html">Fall 2019</a><br>
+						<a href="G572FA2018.html">Fall 2018</a><br>
+						<a href='G572FA2017.html'>Fall 2017</a><br>
+						<a href="G572FA2015.html">Fall 2015</a><br>
+						<a href="G572FA2013.html">Fall 2013</a><br>
+						<a href="G572FA2012.html">Fall 2012</a><br>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='container'>
+
+		<div class='row'>
+			<div class='col-md-12'>
+				<h2 class='page-header'>Final Projects</h2>
+				<br>
+				<br>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/31403f60f5d34639b1fab31377d8f854' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_anderson.png' alt='...' class='final'>
+					<h3 class='finalProject'>Profit Over People: The Creation of Eviction Economies in Dane County</h3>
+					<p><i>Annika Anderson</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/d940136caafe48768e6acfe09bfb34dd' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_casesa.png' alt='...' class='final'>
+					<h3 class='finalProject'>Profit Over People: The Creation of Eviction Economies in Dane County</h3>
+					<p><i>Luke Casesa</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://jlukechamber.github.io/portfolio/portfolio/isthmus.html' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_chamberlain.png' alt='...' class='final'>
+					<h3 class='finalProject'>The Isthmus</h3>
+					<p><i>Luke Chamberlain</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://arcg.is/1DPDvf0' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_gangaraju.png' alt='...' class='final'>
+					<h3 class='finalProject'>Gangotri Glacier Change</h3>
+					<p><i>Ramakrishna Raju Gangaraju</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/ba9c66f1472e43d38c6cedab2797ef23' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_ganong.png' alt='...' class='final'>
+					<h3 class='finalProject'>Colorado River Drought</h3>
+					<p><i>Eli Ganong</i></p>
+				</a>
+			</div>
+			
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://mikeygcarto.github.io/MikeManCarto/portfolio/WillandMike.html' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_grosspietsch.png' alt='...' class='final'>
+					<h3 class='finalProject'>Will and Mike's Grand Canyon Adventure</h3>
+					<p><i>Mikey Grosspietsch</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/d0cc437e92884a98966ab6b235143573' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_huang.png' alt='...' class='final'>
+					<h3 class='finalProject'>Closing the Gap: Air Power and the Battle of the Atlantic</h3>
+					<p><i>Mingrui Huang</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/50b9a225ba6f47ca92960b0f1bc18e8c' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_hunt.png' alt='...' class='final'>
+					<h3 class='finalProject'>Collectivist Conservation</h3>
+					<p><i>Hilary Hunt</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://arcg.is/1v0X99' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_jonhson.png' alt='...' class='final'>
+					<h3 class='finalProject'>Next stop: Rails and Regret</h3>
+					<p><i>Mallory Johnson</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/0be2afe694de45c698511fbbb6417150' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_kwong.png' alt='...' class='final'>
+					<h3 class='finalProject'>Wisconsin Election 2022</h3>
+					<p><i>David Kwong</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://wellagainst.github.io/CityTexture/' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_liu.png' alt='...' class='final'>
+					<h3 class='finalProject'>City Texture in Manhattan Island and Amsterdam</h3>
+					<p><i>Gengkui Liu</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2022FA/maurer_gavin/index.html' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_maurer.png' alt='...' class='final'>
+					<h3 class='finalProject'>Glacial Recession in the US</h3>
+					<p><i>Gavin Maurer</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2022FA/cloudbusting.pdf' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_michalski.png' alt='...' class='final'>
+					<h3 class='finalProject'>Cloudbusting</h3>
+					<p><i>Sophie Michalski</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/2db5295b3f584edaa647d0f4b01751ea' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_nichol.png' alt='...' class='final'>
+					<h3 class='finalProject'>How Rock Music Rolled Through the United States</h3>
+					<p><i>Liam Nichol</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://arcg.is/0yaOSy' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_purisch.png' alt='...' class='final'>
+					<h3 class='finalProject'>ANCSA: A Visual Explainer </h3>
+					<p><i>Hans Purisch</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2022FA/Mars_Poster.pdf' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_ramavajjala.png' alt='...' class='final'>
+					<h3 class='finalProject'>Understanding Mars</h3>
+					<p><i>Chinna Subbaraya Siddharth Ramavajjala</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/b523f7079a4748fbb3be85b4ecbd8f69' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_selvy.png' alt='...' class='final'>
+					<h3 class='finalProject'>Wisconsin's Prairies: Past, Present, and Future</h3>
+					<p><i>Randi Selvy</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://jake-steinberg.github.io/portfolio/pipeline.html' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_steinberg.png' alt='...' class='final'>
+					<h3 class='finalProject'>The Life and Death of the Great Lakes Pipeline</h3>
+					<p><i>Jake Steinberg</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/2c35c99754a648bdb339e73b58a3563a' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_sticha.png' alt='...' class='final'>
+					<h3 class='finalProject'>Edge of Extinction</h3>
+					<p><i>Noah Sticha</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2022FA/finalproject572_tripoli/warring-states-period-designfiles/index.html' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_tripoli.png' alt='...' class='final'>
+					<h3 class='finalProject'>The Warring States Period: The Formation of the First Imperial Dynasty of China</h3>
+					<p><i>Simone Tripoli</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/e21bad4959954bfeb7f7e3e79aa7b66d' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_vallejos.png' alt='...' class='final'>
+					<h3 class='finalProject'>Situated Waste</h3>
+					<p><i>Marco Vallejos</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://arcg.is/0vjnrn0' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_wallenta.png' alt='...' class='final'>
+					<h3 class='finalProject'>Which U.S. State is Naturally the Safest?</h3>
+					<p><i>Jack Wallenta</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='https://storymaps.arcgis.com/stories/9fdd656eb33447fa939c15a2525d32b9' class="projectLink" target='_blank'>
+					<img src='2022FA/ImgSq/FA2022_wellenstein.png' alt='...' class='final'>
+					<h3 class='finalProject'>Nothing Public About It</h3>
+					<p><i>Lukas Wellenstein</i></p>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+		<site-footer></site-footer>
+
+		<script src="../../js/jquery-3.1.1.js" type="text/javascript"></script>
+		<script src="../../js/bootstrap.js" type="text/javascript"></script>
+		<script src="../../js/html_templates.js" type="text/javascript"></script>
+		<script src="../../js/main.js" type="text/javascript"></script>
+
+</body>
+
+</html>

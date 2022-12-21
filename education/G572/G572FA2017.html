@@ -2,184 +2,180 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
-<!--<![endif]-->
-
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
+<!-- Basic Page Needs
 ================================================== -->
-	<meta charset="utf-8">
-	<title>UWCL</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+<meta charset="utf-8">
+<title>UWCL</title>
+<meta name="description" content="">
+<meta name="author" content="">
 
-	<style>
-		#results {
-			min-height: 100% !important;
-			overflow: auto;
-			margin-bottom: 50px !important;
-			padding-bottom: 50px !important;
-		}
+<style>
+	#results{
+	min-height: 100%!important;
+	overflow: auto;
+	margin-bottom: 50px!important;
+	padding-bottom: 50px!important;
+	}
+	#ajaxloader{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
 
-		#ajaxloader {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
+	ol li:before{
+	background-color: none !important;
+	}
+	footer{
+	margin-top: 50px;
+	}
+	.img-responsive{
+	position: relative;
+	margin-right:0%!important;
+	margin-left:22.5%!important;
+	padding:0px!important;
+	}
+	.carousel-inner > .item > img {
+	margin: 0 auto!important;
+	}
 
-		ol li:before {
-			background-color: none !important;
-		}
+	.edu{
+	max-width: 100%;
+	height: auto;
+	}
 
-		footer {
-			margin-top: 50px;
-		}
+	.course{
+	padding-bottom: 50px;
+	}
+</style>
 
-		.d-block w-100 {
-			position: relative;
-			margin-right: 0% !important;
-			margin-left: 22.5% !important;
-			padding: 0px !important;
-		}
-
-		.carousel-inner>.item>img {
-			margin: 0 auto !important;
-		}
-
-		.edu {
-			max-width: 100%;
-			height: auto;
-		}
-
-		.course {
-			padding-bottom: 50px;
-		}
-	</style>
-
-	<!-- Mobile Specific Metas
+<!-- Mobile Specific Metas
 ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
+<!-- CSS
 ================================================== -->
-	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
 
 
 
-	<!-- Fonts
+<!-- Fonts
 ================================================== -->
-	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet'
-		type='text/css'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet' type='text/css'>
 
-	<!-- Javascript
+<!-- Javascript
 ================================================== -->
-	<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
+<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
 
-	<!-- Favicons
+<!-- Favicons
 ================================================== -->
-	<link rel="shortcut icon" href="../../img/favicon.ico">
-	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
 
 </head>
 
 <body>
-	<!--Collapsing NavBar -->
-	<site-header></site-header>
-	<!--end of header -->
-	<div class='container'>
-		<div class='col-md-12'>
+<!--Collapsing NavBar --> 
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="../../index.html"><img src="../../img/UWCL_logo_white.png" alt="UW Cartography Lab" style="width:80px;height:auto;"></a>
+        </div>
 
-			<h1 class='page-header'>Education <i>Courses</i></h1>
+	    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+	        <ul class="nav navbar-nav navText">
+	            <li><a href="../../production/index.html" id="navText">Production</a></li>
+	            <li><a href="../../research/index.html" id="navText">Research</a></li>
+	            <li><a href="../index.html" id="navText">Education</a></li>
+        <li><a href="../../people/index.html" id="navText">People</a></li>
+           </ul>
+	    </div>
+      </div>
+    </nav>
+<!--end of header --> 
+<div class='container'>
+	<div class='col-md-12'>
 
-			<div id="productionCarousel" class="carousel slide" data-ride="carousel">
+		<h1 class='page-header'>Education <i>Courses</i></h1>
 
-				<!-- Indicators -->
-				<div class="carousel-indicators">
-					<button type="button" class="indicator-button active" data-bs-target="#productionCarousel"
-						data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
-						data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
-						data-bs-slide-to="2" aria-label="Slide 3"></button>
-					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
-						data-bs-slide-to="3" aria-label="Slide 4"></button>
-					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
-						data-bs-slide-to="4" aria-label="Slide 5"></button>
-				</div>
+		<div id="productionCarousel" class="carousel slide" data-ride="carousel">
 
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#productionCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#productionCarousel" data-slide-to="1"></li>
+		    <li data-target="#productionCarousel" data-slide-to="2"></li>
+		    <li data-target="#productionCarousel" data-slide-to="3"></li>
+		    <li data-target="#productionCarousel" data-slide-to="4"></li>
+		  </ol>
 
-					<div class="carousel-item active" data-bs-interval="5000">
-						<img src="2017FA/imgWide/Fall2017_AndreaEibergen.png" class='d-block w-100' alt="...">
-					</div>
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    
+		    <div class="item active">
+		      <img src="2017FA/imgWide/Fall2017_AndreaEibergen.png" class='img-responsive' alt="...">
+		    </div>
 
-					<div class="carousel-item" data-bs-interval="5000">
-						<img src="2017FA/imgWide/Fall2017_CarolineArmer.png" class='d-block w-100' alt="...">
-					</div>
+			<div class="item">
+		      <img src="2017FA/imgWide/Fall2017_CarolineArmer.png" class='img-responsive' alt="...">
+		    </div>
 
-					<div class="carousel-item" data-bs-interval="5000">
-						<img src="2017FA/imgWide/Fall2017_DavidWaro.png" class='d-block w-100' alt="...">
-					</div>
+			<div class="item">
+		      <img src="2017FA/imgWide/Fall2017_DavidWaro.png" class='img-responsive' alt="...">
+		    </div>
 
-					<div class="carousel-item" data-bs-interval="5000">
-						<img src="2017FA/imgWide/Fall2017_TylerAlheid.png" class='d-block w-100' alt="...">
-					</div>
+		    <div class="item">
+		      <img src="2017FA/imgWide/Fall2017_TylerAlheid.png" class='img-responsive' alt="...">
+		    </div>
 
-					<div class="carousel-item" data-bs-interval="5000">
-						<img src="2017FA/imgWide/Fall2017_WillSherer.png" class='d-block w-100' alt="...">
-					</div>
-				</div>
+		    <div class="item">
+		      <img src="2017FA/imgWide/Fall2017_WillSherer.png" class='img-responsive' alt="...">
+		    </div>
+		  </div>
 
-				<!-- Left and right controls -->
-				<button class="carousel-control-prev" data-bs-target="#productionCarousel" type="button"
-					data-bs-slide="prev">
-					<span class="fa fa-chevron-left fa-2x" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" data-bs-target="#productionCarousel" type="button"
-					data-bs-slide="next">
-					<span class="fa fa-chevron-right fa-2x" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#productionCarousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#productionCarousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
 		</div>
 	</div>
+</div>
 
 	<div class='container'>
-		<div class='row overview'>
+		<div class='overview'>
 
 			<div class='col-md-8'>
 
 				<div class='course'>
 
 					<h2>Geography 572: Graphic Design in Cartography</h2>
-
-					<p>This course provides an in-depth examination of advanced topics in cartographic representation,
-						or the graphics, sounds, haptics, etc., constituting a map that are employed to encode
-						geographic information. It is a direct extension of 370, but with a focus on cartographic design
-						for the web rather than print, and draws upon research and practice on graphic design, web
-						design, and art. Specifically, it integrates theory on both mapmaking and map use (compared to
-						170 or 370, which focus upon one or the other) and emphasizes design of web-delivered static
-						maps, rather than the design of interfaces for manipulating these maps (compared to 575). The
-						course is divided into two components: lectures and labs.</p>
+					
+					<p>This course provides an in-depth examination of advanced topics in cartographic representation, or the graphics, sounds, haptics, etc., constituting a map that are employed to encode geographic information. It is a direct extension of 370, but with a focus on cartographic design for the web rather than print, and draws upon research and practice on graphic design, web design, and art. Specifically, it integrates theory on both mapmaking and map use (compared to 170 or 370, which focus upon one or the other) and emphasizes design of web-delivered static maps, rather than the design of interfaces for manipulating these maps (compared to 575). The course is divided into two components: lectures and labs.</p>
 
 					<p>Check out past syllabi and finals projects below!</p>
 
 					<h2>Fall 2017</h2>
 					<p>Instructor: Meghan Kelly<br>
-						TA: Pete Bauknecht</p>
-					<h3 class='page-header'><a href="../../projects/syllabi/G572_Fall2017_.pdf" target="_block">Fall 2017
-							Syllabus</a> | </h3>
+					TA: Pete Bauknecht</p>
+					<h3 class='page-header'><a href="../assets/syllabi/G572_Fall2017_.pdf" target="_block">Fall 2017 Syllabus</a> | </h3>
 
 				</div>
 			</div>
@@ -190,178 +186,197 @@
 				<h3>Education</h3>
 
 				<div>
-					<p>
+					   <p>
 						<a href="../curriculum.html">Curriculum Overview</a><br>
-						<a href="../G370/G370FA2021.html">G370: Introduction to Cart</a><br>
-						<a href="G572FA2020.html">G572: Graphic Design</a><br>
-						<a href="../G575/G575SP2021.html">G575: Interactive Cart</a><br>
+						<a href="../G370/G370FA2020.html">G370: Introduction to Cart</a><br>
+						<a href="G572FA2022.html">G572: Graphic Design</a><br>
+						<a href="../G575/G575SP2020.html">G575: Interactive Cart</a><br>
 						<a href="../G970.html">G970: Cartography Seminar</a><br>
-						<a href="../webmapping.html">Web Mapping Workbook</a><br>
-						<a href="../sdg.html">Mapping for a Sustainable World Textbook</a><br>
-						<a href="../QGISTutorials.html">QGIS Open Source Tutorials</a><br>
 						<a href="../designChallenge.html">Design Challenge</a><br>
 						<a href="../CLES.html">Cart Lab Education Series (CLES)</a><br>
-						<a href="../eduResources.html">Educational Resources </a><br>
-						<a href="../../github.html">Github Projects</a><br>
+						<a href="../eduResources.html">Educational Resources </a><br>					
 						<a href="../../contact.html">Contact Us</a><br>
 
-				</div>
-				<h3>Final Projects</h3>
+			   </div>
+	   </div>
 
-				<div>
-					<p>
-						<a href="G572FA2020.html">Fall 2020</a><br>
-						<a href="G572FA2019.html">Fall 2019</a><br>
-						<a href="G572FA2018.html">Fall 2018</a><br>
-						<a href='G572FA2017.html'>Fall 2017</a><br>
-						<a href="G572FA2015.html">Fall 2015</a><br>
-						<a href="G572FA2013.html">Fall 2013</a><br>
-						<a href="G572FA2012.html">Fall 2012</a><br>
-
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<div class='container'>
-
-		<div class='row'>
-			<div class='col-md-12'>
-				<h2 class='page-header'>Final Projects</h2>
-				<br>
-				<br>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017ArmerCaroline.png' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017ArmerCaroline.png' alt='...' class='final'>
-					<h3 class='finalProject'> Louisiana </h3>
-					<p><i>Caroline Armer</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017BancroftshortDawson.png' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017BancroftshortDawson.png' alt='...' class='final'>
-					<h3 class='finalProject'> Wisconsin Cheese Factories </h3>
-					<p><i>Dawson Bancroftshort</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='2017FA/Fall2017CoppernollAustin/index.html' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017CoppernollAustin.png' alt='...' class='final'>
-					<h3 class='finalProject'> All about Wisconsin </h3>
-					<p><i>Austin Coppernoll</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017DarlingtonRobert.png' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017DarlingtonRobert.png' alt='...' class='final'>
-					<h3 class='finalProject'> The Race to the Clouds </h3>
-					<p><i>Robert Darlington</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017EibergenAndrea.png' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017EibergenAndrea.png' alt='...' class='final'>
-					<h3 class='finalProject'> An Exploratory Map of the Moon </h3>
-					<p><i>Andrea Eibergen</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017GraysonTrevor.pdf' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017GraysonTrevor.png' alt='...' class='final'>
-					<h3 class='finalProject'> Boundary Waters Boys </h3>
-					<p><i>Trevor Grayson</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017HartnettCaitin.pdf' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017HartnettCaitin.png' alt='...' class='final'>
-					<h3 class='finalProject'> Wisconsin, The River </h3>
-					<p><i>Caitin Hartnett</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017HerronCarly.png' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017HerronCarly.png' alt='...' class='final'>
-					<h3 class='finalProject'> Waste: Unwrapping the EU </h3>
-					<p><i>Carly Herron</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017KalmanCasey.pdf' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017KalmanCasey.png' alt='...' class='final'>
-					<h3 class='finalProject'> Tobacco Mapped </h3>
-					<p><i>Casey Kalman</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017OstermeierAnna.pdf' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017OstermeierAnna.png' alt='...' class='final'>
-					<h3 class='finalProject'> Alumni Stories: Laurel Ostermeier </h3>
-					<p><i>Anna Ostermeier</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017ShereWill.png' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017ShererWill.png' alt='...' class='final'>
-					<h3 class='finalProject'> Eco-Tourism of New England </h3>
-					<p><i>Will Shere</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017SmaleMike.png' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017SmaleMike.png' alt='...' class='final'>
-					<h3 class='finalProject'> The Yahara River </h3>
-					<p><i>Mike Smale</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='2017FA/Fall2017SmithMatthew/Index.html' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017SmithMatthew.PNG' alt='...' class='final'>
-					<h3 class='finalProject'> Myth of the Monument </h3>
-					<p><i>Matthew Smith</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017VriezenGrace.pdf' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017VriezenGrace.png' alt='...' class='final'>
-					<h3 class='finalProject'> Manhattan vs California </h3>
-					<p><i>Grace Vriezen</i></p>
-				</a>
-			</div>
-
-			<div class='col-lg-4 col-md-6 project'>
-				<a href='../../projects/G572/2017FA/Fall2017WaroDavid.pdf' class="projectLink" target='_blank'>
-					<img src='2017FA/ImgSq/Fall2017WaroDavid.png' alt='...' class='final'>
-					<h3 class='finalProject'> Mount Hood </h3>
-					<p><i>David Waro</i></p>
-				</a>
-			</div>
-		</div>
-	</div>
-	<site-footer></site-footer>
-
-	<script src="../../js/jquery-3.1.1.js" type="text/javascript"></script>
-	<script src="../../js/bootstrap.js" type="text/javascript"></script>
-	<script src="../../js/html_templates.js" type="text/javascript"></script>
-	<script src="../../js/main.js" type="text/javascript"></script>
+			<div class='col-md-4'>
+					<h3>Final Projects</h3>
 	
-</body>
+					 <div>
+						 <p>
+							<a href="G572FA2022.html">Fall 2022</a><br>
+							<a href="G572FA2020.html">Fall 2020</a><br>
+							<a href="G572FA2019.html">Fall 2019</a><br>
+							<a href="G572FA2018.html">Fall 2018</a><br>
+							<a href='G572FA2017.html'>Fall 2017</a><br>
+							<a href="G572FA2015.html">Fall 2015</a><br>
+							<a href="G572FA2013.html">Fall 2013</a><br>
+							<a href="G572FA2012.html">Fall 2012</a><br>
+	
+					</div>
+				</div>
 
+		</div>
+	</div>
+
+	<div class='container'>
+		<div class='col-md-12'>
+					<h2 class='page-header'>Final Projects</h2> 
+			<br>
+			<br>
+		</div>
+	</div>
+
+	<div class="container">
+			<a href='2017FA/PDF/Fall2017ArmerCaroline.png' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017ArmerCaroline.png' alt='...' class='final'>
+				<h3 class='finalProject'>  Louisiana      </h3>
+				<p><i>Caroline Armer</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017BancroftshortDawson.png' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017BancroftshortDawson.png' alt='...' class='final'>
+				<h3 class='finalProject'>  Wisconsin Cheese Factories      </h3>
+				<p><i>Dawson Bancroftshort</i></p>
+				</div></a>
+
+				<a href='2017FA/Fall2017CoppernollAustin/index.html' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017CoppernollAustin.png' alt='...' class='final'>
+				<h3 class='finalProject'>  All about Wisconsin      </h3>
+				<p><i>Austin Coppernoll</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017DarlingtonRobert.png' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017DarlingtonRobert.png' alt='...' class='final'>
+				<h3 class='finalProject'>   The Race to the Clouds     </h3>
+				<p><i>Robert Darlington</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017EibergenAndrea.png' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017EibergenAndrea.png' alt='...' class='final'>
+				<h3 class='finalProject'> An Exploratory Map of the Moon        </h3>
+				<p><i>Andrea Eibergen</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017GraysonTrevor.pdf' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017GraysonTrevor.png' alt='...' class='final'>
+				<h3 class='finalProject'>  Boundary Waters Boys      </h3>
+				<p><i>Trevor Grayson</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017HartnettCaitin.pdf' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017HartnettCaitin.png' alt='...' class='final'>
+				<h3 class='finalProject'>  Wisconsin, The River     </h3>
+				<p><i>Caitin Hartnett</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017HerronCarly.png' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017HerronCarly.png' alt='...' class='final'>
+				<h3 class='finalProject'>   Waste: Unwrapping the EU     </h3>
+				<p><i>Carly Herron</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017KalmanCasey.pdf' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017KalmanCasey.png' alt='...' class='final'>
+				<h3 class='finalProject'> Tobacco Mapped       </h3>
+				<p><i>Casey Kalman</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017OstermeierAnna.pdf' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017OstermeierAnna.png' alt='...' class='final'>
+				<h3 class='finalProject'>    Alumni Stories: Laurel Ostermeier    </h3>
+				<p><i>Anna Ostermeier</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017ShereWill.png' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017ShererWill.png' alt='...' class='final'>
+				<h3 class='finalProject'>  Eco-Tourism of New England      </h3>
+				<p><i>Will Shere</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017SmaleMike.png' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017SmaleMike.png' alt='...' class='final'>
+				<h3 class='finalProject'>    The Yahara River    </h3>
+				<p><i>Mike Smale</i></p>
+				</div></a>
+
+				<a href='2017FA/Fall2017SmithMatthew/Index.html' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017SmithMatthew.PNG' alt='...' class='final'>
+				<h3 class='finalProject'>   Myth of the Monument     </h3>
+				<p><i>Matthew Smith</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017VriezenGrace.pdf' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017VriezenGrace.png' alt='...' class='final'>
+				<h3 class='finalProject'> Manhattan vs California     </h3>
+				<p><i>Grace Vriezen</i></p>
+				</div></a>
+				
+				<a href='2017FA/PDF/Fall2017WaroDavid.pdf' target='_blank'>
+				<div class='col-md-4 col-sm-6 centerFinal'>
+				<img src='2017FA/ImgSq/Fall2017WaroDavid.png' alt='...' class='final'>
+				<h3 class='finalProject'> Mount Hood       </h3>
+				<p><i>David Waro</i></p>
+				</div></a>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer navbar-fixed-bottom">
+		<div class="container">
+		    <div class="row">
+		        <div class="align-center">
+		            <br>
+		            <img src="../../img/UWCL_logo_gray.png">
+
+		            <p>Copyright 2019&copy; All Rights Reserved.</p>
+		        </div>
+		    </div>
+		</div>
+</footer>
+
+
+<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+      <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../../js/jquery.cookie.js" type="text/javascript">
+</script>
+<script src="../../js/jquery.ba-cond.min.js" type="text/javascript">
+</script>
+<script src="../../js/jquery.slitslider.js" type="text/javascript">
+</script>
+<script src="../../js/jquery.prettyPhoto.js" type="text/javascript">
+</script>
+<script src="../../js/custom.js" type="text/javascript">
+</script>
+<script src="../../js/main.js" type="text/javascript">
+</script>
+
+
+</body>
 </html>
