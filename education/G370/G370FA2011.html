@@ -2,109 +2,98 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
 
-<!-- Basic Page Needs
+	<!-- Basic Page Needs
 ================================================== -->
-<meta charset="utf-8">
-<title>UWCL</title>
-<meta name="description" content="">
-<meta name="author" content="">
+	<meta charset="utf-8">
+	<title>UWCL</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-<style>
-	#results{
-	min-height: 100%!important;
-	overflow: auto;
-	margin-bottom: 50px!important;
-	padding-bottom: 50px!important;
-	}
-	#ajaxloader{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	}
+	<style>
+		#results {
+			min-height: 100% !important;
+			overflow: auto;
+			margin-bottom: 50px !important;
+			padding-bottom: 50px !important;
+		}
 
-	ol li:before{
-	background-color: none !important;
-	}
-	footer{
-	margin-top: 50px;
-	}
-	.img-responsive{
-	position: relative;
-	margin-right:0%!important;
-	margin-left:22.5%!important;
-	padding:0px!important;
-	}
-	.carousel-inner > .item > img {
-	margin: 0 auto!important;
-	}
+		#ajaxloader {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
-	.edu{
-	max-width: 100%;
-	height: auto;
-	}
+		ol li:before {
+			background-color: none !important;
+		}
 
-	.course{
-	padding-bottom: 50px;
-	}
-</style>
+		footer {
+			margin-top: 50px;
+		}
 
-<!-- Mobile Specific Metas
+		.d-block w-100 {
+			position: relative;
+			margin-right: 0% !important;
+			margin-left: 22.5% !important;
+			padding: 0px !important;
+		}
+
+		.carousel-inner>.item>img {
+			margin: 0 auto !important;
+		}
+
+		.edu {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.course {
+			padding-bottom: 50px;
+		}
+	</style>
+
+	<!-- Mobile Specific Metas
 ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!-- CSS
+	<!-- CSS
 ================================================== -->
-<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 
 
-<!-- Fonts
+	<!-- Fonts
 ================================================== -->
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet'
+		type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Javascript
+	<!-- Javascript
 ================================================== -->
-<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
+	<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
 
-<!-- Favicons
+	<!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="../../img/favicon.ico">
-<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
 
 </head>
 
 <body>
-<!--Collapsing NavBar --> 
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="../../index.html"><img src="../../img/UWCL_logo_white.png" alt="UW Cartography Lab" style="width:80px;height:auto;"></a>
-        </div>
-
-	    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-	        <ul class="nav navbar-nav navText">
-	            <li><a href="../../production/index.html" id="navText">Production</a></li>
-	            <li><a href="../../research/index.html" id="navText">Research</a></li>
-	            <li><a href="../../index.html" id="navText">Education</a></li>
-	      <li><a href="../../people/index.html" id="navText">People</a></li>
-	        </ul>
-	    </div>
-      </div>
-    </nav>
-<!--end of header --> 
+	<!--Collapsing NavBar -->
+	<site-header></site-header>
+	<!--end of header -->
 
 	<div class='container'>
 		<div class='col-md-12'>
@@ -113,391 +102,355 @@
 
 			<div id="productionCarousel" class="carousel slide" data-ride="carousel">
 
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-				    <li data-target="#productionCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#productionCarousel" data-slide-to="1"></li>
-				    <li data-target="#productionCarousel" data-slide-to="2"></li>
-				    <li data-target="#productionCarousel" data-slide-to="3"></li>
-				    <li data-target="#productionCarousel" data-slide-to="4"></li>
-			  </ol>
+				<!-- Indicators -->
+				<div class="carousel-indicators">
+					<button type="button" class="indicator-button active" data-bs-target="#productionCarousel"
+						data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="4" aria-label="Slide 5"></button>
+				</div>
 
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-				    
-				    <div class="item active">
-				      	
-				      	<img src="2011FA/imgWide/2011Fall_ErinHamilton.png" alt="...">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
 
-				    </div>
+					<div class="carousel-item active" data-bs-interval="5000">
 
-				    <div class="item">
+						<img src="2011FA/imgWide/2011Fall_ErinHamilton.png" class='d-block w-100' alt="...">
 
-				      	<img src="2011FA/imgWide/2011Fall_GraceShellinger.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-				    <div class="item">
+						<img src="2011FA/imgWide/2011Fall_GraceShellinger.png" class='d-block w-100' alt="...">
 
-				      	<img src="2011FA/imgWide/2011Fall_LizziSlivinski.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-				    <div class="item">
+						<img src="2011FA/imgWide/2011Fall_LizziSlivinski.png" class='d-block w-100' alt="...">
 
-				    	<img src="2011FA/imgWide/2011Fall_SarahGraves.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-	 				<div class="item">
+						<img src="2011FA/imgWide/2011Fall_SarahGraves.png" class='d-block w-100' alt="...">
 
-				    	<img src="2011FA/imgWide/2011Fall_ShagunRaina.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-			  </div>
+						<img src="2011FA/imgWide/2011Fall_ShagunRaina.png" class='d-block w-100' alt="...">
 
-			  <!-- Left and right controls -->
-			  <a class="left carousel-control" href="#productionCarousel" role="button" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#productionCarousel" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
+					</div>
+
+				</div>
+
+				<!-- Left and right controls -->
+				<button class="carousel-control-prev" data-bs-target="#productionCarousel" type="button"
+					data-bs-slide="prev">
+					<span class="fa fa-chevron-left fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" data-bs-target="#productionCarousel" type="button"
+					data-bs-slide="next">
+					<span class="fa fa-chevron-right fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+
 			</div>
 		</div>
 	</div>
 
 	<div class='container'>
-		<div class='overview'>
+		<div class="row overview">
 
 			<div class='col-md-8'>
 
 				<div class='course'>
 
 					<h2>Geography 370: Introduction to Cartography</h2>
-					
-					<p>This course provides a general introduction to cartography, broadly defined as the art, science, and ethics of mapmaking and map use. It – and the UW Cartography curriculum in general – focuses upon the design of maps, drawing from research and practice on graphic design, information visualization, and semiotics, perspectives that students are unlikely to receive in other GIS courses. Specifically, the course emphasizes mapmaking over map use (compared to 170) and print mapping over web-based or interactive mapping (compared to 572 and 575, respectively). The course is divided into two components: lectures and labs.</p>
+
+					<p>This course provides a general introduction to cartography, broadly defined as the art, science,
+						and ethics of mapmaking and map use. It – and the UW Cartography curriculum in general – focuses
+						upon the design of maps, drawing from research and practice on graphic design, information
+						visualization, and semiotics, perspectives that students are unlikely to receive in other GIS
+						courses. Specifically, the course emphasizes mapmaking over map use (compared to 170) and print
+						mapping over web-based or interactive mapping (compared to 572 and 575, respectively). The
+						course is divided into two components: lectures and labs.</p>
 
 					<p>Check out past syllabi and finals projects below!</p>
 
 					<h2>Fall 2011</h2>
-					<p>Instructor:  Robert E. Roth <br>
-					TA: Chris Cantey </p>
-					<h3 class='page-header'><a href="../assets/syllabi/G370_Fall2015.pdf" target="_block">Fall 2015 Syllabus</a> </h3>	
+					<p>Instructor: Robert E. Roth <br>
+						TA: Chris Cantey </p>
+					<h3 class='page-header'><a href="../../projects/syllabi/G370_Fall2015.pdf" target="_block">Fall 2015
+							Syllabus</a> </h3>
 
 				</div>
 
 			</div>
 
-		</div>
-	
 			<div class='col-md-4'>
-					<h3>Education</h3>
+				<h3>Education</h3>
 
-			 		<div>
-							<p>	
-								<a href="../curriculum.html">Curriculum Overview</a><br>
-								<a href="G370FA2020.html">G370: Introduction to Cart</a><br>
-								<a href="../G572/G572FA2022.html">G572: Graphic Design</a><br>
-								<a href="../G575/G575SP2020.html">G575: Interactive Cart</a><br>
-								<a href="../G970.html">G970: Cartography Seminar</a><br>
-								<a href="../designChallenge.html">Design Challenge</a><br>
-								<a href="../CLES.html">Cart Lab Education Series (CLES)</a><br>
-								<a href="../eduResources.html">Educational Resources </a><br>					
-								<a href="../../contact.html">Contact Us</a><br>
-
+				<div>
+					<p>
+						<a href="../curriculum.html">Curriculum Overview</a><br>
+						<a href="G370FA2021.html">G370: Introduction to Cart</a><br>
+						<a href="../G572/G572FA2022.html">G572: Graphic Design</a><br>
+						<a href="../G575/G575SP2021.html">G575: Interactive Cart</a><br>
+						<a href="../G970.html">G970: Cartography Seminar</a><br>
+						<a href="../webmapping.html">Web Mapping Workbook</a><br>
+						<a href="../sdg.html">Mapping for a Sustainable World Textbook</a><br>
+						<a href="../QGISTutorials.html">QGIS Open Source Tutorials</a><br>
+						<a href="../CLES.html">Cart Lab Education Series (CLES)</a><br>
+						<a href="../eduResources.html">Educational Resources </a><br>
+						<a href="../../github.html">Github Projects</a><br>
+						<a href="../../contact.html">Contact Us</a><br>
+					</p>
 				</div>
-			</div>
 
-			<div class='col-md-4'>
 				<h3>Final Projects</h3>
 
-		 		<div>
-					 <p>
-							<a href='G370FA2020.html'>Fall 2020</a><br>	
-							<a href='G370FA2019.html'>Fall 2019</a><br>
-							<a href="G370SP2019.html">Spring 2019</a><br>
-							<a href='G370FA2018.html'>Fall 2018</a><br>
-							<a href="G370SP2016.html">Spring 2016</a><br>
-							<a href="G370FA2015.html">Fall 2015</a><br>
-							<a href="G370FA2014.html">Fall 2014</a><br>
-							<a href="G370FA2013.html">Fall 2013</a><br>
-							<a href="G370FA2012.html">Fall 2012</a><br>
-							<a href="G370SP2012.html">Spring 2012</a><br>
-							<a href="G370FA2011.html">Fall 2011</a><br>
-
-
+				<div>
+					<p>
+						<a href='G370FA2021.html'>Fall 2021</a><br>
+						<a href='G370SP2021.html'>Spring 2021</a><br>
+						<a href='G370FA2020.html'>Fall 2020</a><br>
+						<a href='G370FA2019.html'>Fall 2019</a><br>
+						<a href="G370SP2019.html">Spring 2019</a><br>
+						<a href='G370FA2018.html'>Fall 2018</a><br>
+						<a href="G370SP2016.html">Spring 2016</a><br>
+						<a href="G370FA2015.html">Fall 2015</a><br>
+						<a href="G370FA2014.html">Fall 2014</a><br>
+						<a href="G370FA2013.html">Fall 2013</a><br>
+						<a href="G370FA2012.html">Fall 2012</a><br>
+						<a href="G370SP2012.html">Spring 2012</a><br>
+						<a href="G370FA2011.html">Fall 2011</a><br>
+					</p>
 				</div>
 			</div>
-		
-
+		</div>
 	</div>
 
 	<div class='container'>
+		<div class='row'>
 			<div class='col-md-12'>
-						<h2 class='page-header'>Final Projects</h2> 
+				<h2 class='page-header'>Final Projects</h2>
 				<br>
 				<br>
 			</div>
-	</div>
-
-	<div class="container">
-			<a href='2011FA/PDF/Fall2011ChristensonCroix.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011ChristensonCroix.png' alt='...' class='final'>
-				<h3 class='finalProject'>  October 2011 Norther Hemisphere Jets and Superpositions      </h3>
-				<p><i>Croix Christenson</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011CrichtonMichael.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011CrichtonMichael.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Landmine Casualties in Africa      </h3>
-				<p><i>Michael Crichton</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011CzaplewskiJohn.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011CzaplewskiJohn.png' alt='...' class='final'>
-				<h3 class='finalProject'>  The John Muir Trail      </h3>
-				<p><i>John Czaplewski</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011DahlCasey.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011DahlCasey.png' alt='...' class='final'>
-				<h3 class='finalProject'> What is Local?       </h3>
-				<p><i>Casey Dahl</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011DraperBlake.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011DraperBlake.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Mapping a Watersheds     </h3>
-				<p><i>Blake Draper</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011EmdeMadeline.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011EmdeMadeline.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Occupy Protests in the United States      </h3>
-				<p><i>Madeline Emde</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011GabrielJackson.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011GabrielJackson.png' alt='...' class='final'>
-				<h3 class='finalProject'>  The Alphorn-man Triathlon of New Glarus      </h3>
-				<p><i>Jackson Gabriel</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011GravesSarah.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011GravesSarah.png' alt='...' class='final'>
-				<h3 class='finalProject'>  The Value of America's Forests      </h3>
-				<p><i>Sarah Graves</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011HamiltonErin.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011HamiltonErin.png' alt='...' class='final'>
-				<h3 class='finalProject'>  The Frontline of the Battle Against Asian Carp Establishment       </h3>
-				<p><i>Erin Hamilton</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011HellerJacqueline.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011HellerJacqueline.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Edinburgh Marathon      </h3>
-				<p><i>Jacqueline Heller</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011JanickiJulia.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011JanickiJulia.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Species: What are some likely factors?      </h3>
-				<p><i>Julia Janicki</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011JarockiMorgan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011JarockiMorgan.png' alt='...' class='final'>
-				<h3 class='finalProject'> Refereeing: Technique and Positioning       </h3>
-				<p><i>Morgan Jarocki</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011KannardAmanda.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011KannardAmanda.png' alt='...' class='final'>
-				<h3 class='finalProject'>   The Dirty Truth About Coal     </h3>
-				<p><i>Amanda Kannard</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011KellyKatherine.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011KellyKatherine.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Wisconsin: Protect Your Waters, Test Your Waters      </h3>
-				<p><i>Katherine Kelly</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011LehnerGreg.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011LehnerGreg.png' alt='...' class='final'>
-				<h3 class='finalProject'> How Many Big Macs Can you Buy?       </h3>
-				<p><i>Greg Lehner</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011MalmanAri.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011MalmanAri.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Spain's Influence on the World      </h3>
-				<p><i>Ari Malman</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011OmriMasrudy.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011OmriMasrudy.png' alt='...' class='final'>
-				<h3 class='finalProject'>     America's Best Universities 2011   </h3>
-				<p><i>Masrudy Omri</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011PichlerMarie.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011PichlerMarie.png' alt='...' class='final'>
-				<h3 class='finalProject'>  How Much has Changed Since Reunification?       </h3>
-				<p><i>Marie Pichler</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011PlasterBryan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011PlasterBryan.png' alt='...' class='final'>
-				<h3 class='finalProject'>   America's Pastime?     </h3>
-				<p><i>Bryan Plaster</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011RaimannMargaret.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011RaimannMargaret.png' alt='...' class='final'>
-				<h3 class='finalProject'>    Where we Live, Where We Work    </h3>
-				<p><i>Margaret Raimann</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011RainaShagun.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011RainaShagun.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Journey to the West: Chinese Travellers to South Asia      </h3>
-				<p><i>Shagun Raina</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011RhotenDavid.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011RhotenDavid.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Reconstructing Iraq, Summer 2003     </h3>
-				<p><i>David Rhoten</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011SackCarl.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011SackCarl.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Water On the Line      </h3>
-				<p><i>Carl Sack</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011ShellingerGrace.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011ShellingerGrace.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Mammal Diversity of North America      </h3>
-				<p><i>Grace Shellinger</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011ShenJessica.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011ShenJessica.png' alt='...' class='final'>
-				<h3 class='finalProject'>   The Appalachian Trail     </h3>
-				<p><i>Jessica Shen</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011SlivinskiLizzi.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011SlivinskiLizzi.png' alt='...' class='final'>
-				<h3 class='finalProject'> Running the World Dry       </h3>
-				<p><i>Lizzi Slivinski</i></p>
-				</div></a>
-				
-				<a href='2011FA/PDF/Fall2011StamosChristy.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2011FA/ImgSq/Fall2011StamosChristy.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Protecting the Penokee Range from Irresponsible Iron Mining      </h3>
-				<p><i>Christy Stamos</i></p>
-				</div></a>
-	</div>
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-
-	
-		
-
-
-</div>
-
-<footer class="footer navbar-fixed-bottom">
-		<div class="container">
-		    <div class="row">
-		        <div class="align-center">
-		            <br>
-		            <img src="../../img/UWCL_logo_gray.png">
-
-		            <p>Copyright 2019&copy; All Rights Reserved.</p>
-		        </div>
-		    </div>
 		</div>
-</footer>
 
-<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-      <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="../../js/jquery.cookie.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.ba-cond.min.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.slitslider.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.prettyPhoto.js" type="text/javascript">
-</script>
-<script src="../../js/custom.js" type="text/javascript">
-</script>
-<script src="../../js/main.js" type="text/javascript">
-</script>
+		<div class="row">
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011ChristensonCroix.pdf' class="projectLink"
+					target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011ChristensonCroix.png' alt='...' class='final'>
+					<h3 class='finalProject'> October 2011 Norther Hemisphere Jets and Superpositions </h3>
+					<p><i>Croix Christenson</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011CrichtonMichael.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011CrichtonMichael.png' alt='...' class='final'>
+					<h3 class='finalProject'> Landmine Casualties in Africa </h3>
+					<p><i>Michael Crichton</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011CzaplewskiJohn.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011CzaplewskiJohn.png' alt='...' class='final'>
+					<h3 class='finalProject'> The John Muir Trail </h3>
+					<p><i>John Czaplewski</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011DahlCasey.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011DahlCasey.png' alt='...' class='final'>
+					<h3 class='finalProject'> What is Local? </h3>
+					<p><i>Casey Dahl</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011DraperBlake.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011DraperBlake.png' alt='...' class='final'>
+					<h3 class='finalProject'> Mapping a Watersheds </h3>
+					<p><i>Blake Draper</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011EmdeMadeline.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011EmdeMadeline.png' alt='...' class='final'>
+					<h3 class='finalProject'> Occupy Protests in the United States </h3>
+					<p><i>Madeline Emde</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011GabrielJackson.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011GabrielJackson.png' alt='...' class='final'>
+					<h3 class='finalProject'> The Alphorn-man Triathlon of New Glarus </h3>
+					<p><i>Jackson Gabriel</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011GravesSarah.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011GravesSarah.png' alt='...' class='final'>
+					<h3 class='finalProject'> The Value of America's Forests </h3>
+					<p><i>Sarah Graves</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011HamiltonErin.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011HamiltonErin.png' alt='...' class='final'>
+					<h3 class='finalProject'> The Frontline of the Battle Against Asian Carp Establishment </h3>
+					<p><i>Erin Hamilton</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011HellerJacqueline.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011HellerJacqueline.png' alt='...' class='final'>
+					<h3 class='finalProject'> Edinburgh Marathon </h3>
+					<p><i>Jacqueline Heller</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011JanickiJulia.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011JanickiJulia.png' alt='...' class='final'>
+					<h3 class='finalProject'> Species: What are some likely factors? </h3>
+					<p><i>Julia Janicki</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011JarockiMorgan.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011JarockiMorgan.png' alt='...' class='final'>
+					<h3 class='finalProject'> Refereeing: Technique and Positioning </h3>
+					<p><i>Morgan Jarocki</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011KannardAmanda.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011KannardAmanda.png' alt='...' class='final'>
+					<h3 class='finalProject'> The Dirty Truth About Coal </h3>
+					<p><i>Amanda Kannard</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011KellyKatherine.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011KellyKatherine.png' alt='...' class='final'>
+					<h3 class='finalProject'> Wisconsin: Protect Your Waters, Test Your Waters </h3>
+					<p><i>Katherine Kelly</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011LehnerGreg.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011LehnerGreg.png' alt='...' class='final'>
+					<h3 class='finalProject'> How Many Big Macs Can you Buy? </h3>
+					<p><i>Greg Lehner</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011MalmanAri.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011MalmanAri.png' alt='...' class='final'>
+					<h3 class='finalProject'> Spain's Influence on the World </h3>
+					<p><i>Ari Malman</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011OmriMasrudy.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011OmriMasrudy.png' alt='...' class='final'>
+					<h3 class='finalProject'> America's Best Universities 2011 </h3>
+					<p><i>Masrudy Omri</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011PichlerMarie.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011PichlerMarie.png' alt='...' class='final'>
+					<h3 class='finalProject'> How Much has Changed Since Reunification? </h3>
+					<p><i>Marie Pichler</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011PlasterBryan.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011PlasterBryan.png' alt='...' class='final'>
+					<h3 class='finalProject'> America's Pastime? </h3>
+					<p><i>Bryan Plaster</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011RaimannMargaret.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011RaimannMargaret.png' alt='...' class='final'>
+					<h3 class='finalProject'> Where we Live, Where We Work </h3>
+					<p><i>Margaret Raimann</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011RainaShagun.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011RainaShagun.png' alt='...' class='final'>
+					<h3 class='finalProject'> Journey to the West: Chinese Travellers to South Asia </h3>
+					<p><i>Shagun Raina</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011RhotenDavid.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011RhotenDavid.png' alt='...' class='final'>
+					<h3 class='finalProject'> Reconstructing Iraq, Summer 2003 </h3>
+					<p><i>David Rhoten</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011SackCarl.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011SackCarl.png' alt='...' class='final'>
+					<h3 class='finalProject'> Water On the Line </h3>
+					<p><i>Carl Sack</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011ShellingerGrace.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011ShellingerGrace.png' alt='...' class='final'>
+					<h3 class='finalProject'> Mammal Diversity of North America </h3>
+					<p><i>Grace Shellinger</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011ShenJessica.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011ShenJessica.png' alt='...' class='final'>
+					<h3 class='finalProject'> The Appalachian Trail </h3>
+					<p><i>Jessica Shen</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011SlivinskiLizzi.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011SlivinskiLizzi.png' alt='...' class='final'>
+					<h3 class='finalProject'> Running the World Dry </h3>
+					<p><i>Lizzi Slivinski</i></p>
+				</a>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2011FA/Fall2011StamosChristy.pdf' class="projectLink" target='_blank'>
+					<img src='2011FA/ImgSq/Fall2011StamosChristy.png' alt='...' class='final'>
+					<h3 class='finalProject'> Protecting the Penokee Range from Irresponsible Iron Mining </h3>
+					<p><i>Christy Stamos</i></p>
+				</a>
+			</div>
 
+		</div>
+
+	</div>
+
+	<site-footer></site-footer>
+
+	<script src="../../js/jquery-3.1.1.js" type="text/javascript"></script>
+	<script src="../../js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../js/html_templates.js" type="text/javascript"></script>
+	<script src="../../js/main.js" type="text/javascript"></script>
+	
 </body>
+
 </html>

@@ -2,110 +2,99 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
 
-<!-- Basic Page Needs
+	<!-- Basic Page Needs
 ================================================== -->
-<meta charset="utf-8">
-<title>UWCL</title>
-<meta name="description" content="">
-<meta name="author" content="">
+	<meta charset="utf-8">
+	<title>UWCL</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-<style>
-	#results{
-	min-height: 100%!important;
-	overflow: auto;
-	margin-bottom: 50px!important;
-	padding-bottom: 50px!important;
-	}
-	#ajaxloader{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	}
+	<style>
+		#results {
+			min-height: 100% !important;
+			overflow: auto;
+			margin-bottom: 50px !important;
+			padding-bottom: 50px !important;
+		}
 
-	ol li:before{
-	background-color: none !important;
-	}
-	footer{
-	margin-top: 50px;
-	}
-	.img-responsive{
-	position: relative;
-	margin-right:0%!important;
-	margin-left:22.5%!important;
-	padding:0px!important;
-	}
-	.carousel-inner > .item > img {
-	margin: 0 auto!important;
-	}
+		#ajaxloader {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
-	.edu{
-	max-width: 100%;
-	height: auto;
-	}
+		ol li:before {
+			background-color: none !important;
+		}
 
-	.course{
-	padding-bottom: 50px;
-	}
-</style>
+		footer {
+			margin-top: 50px;
+		}
 
-<!-- Mobile Specific Metas
+		.d-block w-100 {
+			position: relative;
+			margin-right: 0% !important;
+			margin-left: 22.5% !important;
+			padding: 0px !important;
+		}
+
+		.carousel-inner>.item>img {
+			margin: 0 auto !important;
+		}
+
+		.edu {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.course {
+			padding-bottom: 50px;
+		}
+	</style>
+
+	<!-- Mobile Specific Metas
 ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!-- CSS
+	<!-- CSS
 ================================================== -->
-<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 
 
 
-<!-- Fonts
+	<!-- Fonts
 ================================================== -->
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet'
+		type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Javascript
+	<!-- Javascript
 ================================================== -->
-<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
+	<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
 
-<!-- Favicons
+	<!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="../../img/favicon.ico">
-<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
 
 </head>
 
 <body>
-<!--Collapsing NavBar --> 
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="../../index.html"><img src="../../img/UWCL_logo_white.png" alt="UW Cartography Lab" style="width:80px;height:auto;"></a>
-        </div>
-
-	    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-	        <ul class="nav navbar-nav navText">
-	            <li><a href="../../production/index.html" id="navText">Production</a></li>
-	            <li><a href="../../research/index.html" id="navText">Research</a></li>
-	            <li><a href="../../index.html" id="navText">Education</a></li>
-        <li><a href="../../people/index.html" id="navText">People</a></li>
-           </ul>
-	    </div>
-      </div>
-    </nav>
-<!--end of header --> 
+	<!--Collapsing NavBar -->
+	<site-header></site-header>
+	<!--end of header -->
 
 	<div class='container'>
 		<div class='col-md-12'>
@@ -114,112 +103,126 @@
 
 			<div id="productionCarousel" class="carousel slide" data-ride="carousel">
 
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-				    <li data-target="#productionCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#productionCarousel" data-slide-to="1"></li>
-				    <li data-target="#productionCarousel" data-slide-to="2"></li>
-				    <li data-target="#productionCarousel" data-slide-to="3"></li>
-				    <li data-target="#productionCarousel" data-slide-to="4"></li>
-			  </ol>
+				<!-- Indicators -->
+				<div class="carousel-indicators">
+					<button type="button" class="indicator-button active" data-bs-target="#productionCarousel"
+						data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="4" aria-label="Slide 5"></button>
+				</div>
 
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-				    
-				    <div class="item active">
-				      	
-				      	<img src="2015FA/imgWide/2015Fall_JasminBecerra.png" alt="...">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
 
-				    </div>
+					<div class="carousel-item active" data-bs-interval="5000">
 
-				    <div class="item">
+						<img src="2015FA/imgWide/2015Fall_JasminBecerra.png" class='d-block w-100' alt="...">
 
-				      	<img src="2015FA/imgWide/2015Fall_JosieSajbel.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-				    <div class="item">
+						<img src="2015FA/imgWide/2015Fall_JosieSajbel.png" class='d-block w-100' alt="...">
 
-				      	<img src="2015FA/imgWide/2015Fall_PaigeLyons-1.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-				    <div class="item">
+						<img src="2015FA/imgWide/2015Fall_PaigeLyons-1.png" class='d-block w-100' alt="...">
 
-				    	<img src="2015FA/imgWide/2015Fall_RyanSmith.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-	 				<div class="item">
+						<img src="2015FA/imgWide/2015Fall_RyanSmith.png" class='d-block w-100' alt="...">
 
-				    	<img src="2015FA/imgWide/2015Fall_ScottFarley.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-			  </div>
+						<img src="2015FA/imgWide/2015Fall_ScottFarley.png" class='d-block w-100' alt="...">
 
-			  <!-- Left and right controls -->
-			  <a class="left carousel-control" href="#productionCarousel" role="button" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#productionCarousel" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
+					</div>
+
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#productionCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#productionCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
 	</div>
 
 	<div class='container'>
-		<div class='overview'>
+		<div class='row overview'>
 
 			<div class='col-md-8'>
 
 				<div class='course'>
 
 					<h2>Geography 370: Introduction to Cartography</h2>
-					
-					<p>This course provides a general introduction to cartography, broadly defined as the art, science, and ethics of mapmaking and map use. It – and the UW Cartography curriculum in general – focuses upon the design of maps, drawing from research and practice on graphic design, information visualization, and semiotics, perspectives that students are unlikely to receive in other GIS courses. Specifically, the course emphasizes mapmaking over map use (compared to 170) and print mapping over web-based or interactive mapping (compared to 572 and 575, respectively). The course is divided into two components: lectures and labs.</p>
+
+					<p>This course provides a general introduction to cartography, broadly defined as the art, science,
+						and ethics of mapmaking and map use. It – and the UW Cartography curriculum in general – focuses
+						upon the design of maps, drawing from research and practice on graphic design, information
+						visualization, and semiotics, perspectives that students are unlikely to receive in other GIS
+						courses. Specifically, the course emphasizes mapmaking over map use (compared to 170) and print
+						mapping over web-based or interactive mapping (compared to 572 and 575, respectively). The
+						course is divided into two components: lectures and labs.</p>
 
 					<p>Check out past syllabi and finals projects below!</p>
 
 					<h2>Fall 2015</h2>
 					<p>Instructor: William (Bill) Gartner<br>
-					TA: Chelsea Nestel and Zihan Song</p>
-					<h3 class='page-header'><a href="../assets/syllabi/G370_Fall2015.pdf" target="_block">Fall 2018 Syllabus</a> </h3>	
+						TA: Chelsea Nestel and Zihan Song</p>
+					<h3 class='page-header'><a href="../../projects/syllabi/G370_Fall2015.pdf" target="_block">Fall 2018
+							Syllabus</a> </h3>
 
 				</div>
 
 			</div>
 
-		</div>
 
-		<div class='col-md-4'>
+			<div class='col-md-4'>
 				<h3>Education</h3>
 
 				<div>
-					   <p>
-						<a href="../curriculum.html">Curriculum Overview</a><br>	
-						<a href="G370FA2020.html">G370: Introduction to Cart</a><br>
+					<p>
+						<a href="../curriculum.html">Curriculum Overview</a><br>
+						<a href="G370FA2021.html">G370: Introduction to Cart</a><br>
 						<a href="../G572/G572FA2022.html">G572: Graphic Design</a><br>
-						<a href="../G575/G575SP2020.html">G575: Interactive Cart</a><br>
+						<a href="../G575/G575SP2021.html">G575: Interactive Cart</a><br>
 						<a href="../G970.html">G970: Cartography Seminar</a><br>
+						<a href="../webmapping.html">Web Mapping Workbook</a><br>
+						<a href="../sdg.html">Mapping for a Sustainable World Textbook</a><br>
+						<a href="../QGISTutorials.html">QGIS Open Source Tutorials</a><br>
 						<a href="../designChallenge.html">Design Challenge</a><br>
 						<a href="../CLES.html">Cart Lab Education Series (CLES)</a><br>
-						<a href="../eduResources.html">Educational Resources </a><br>					
+						<a href="../eduResources.html">Educational Resources </a><br>
+						<a href="../../github.html">Github Projects</a><br>
 						<a href="../../contact.html">Contact Us</a><br>
 
 
-			   </div>
-   </div>
-
-		<div class='col-md-4'>
+				</div>
 				<h3>Final Projects</h3>
 
-		 		<div>
-					 <p>
-						<a href='G370FA2020.html'>Fall 2020</a><br>	
+				<div>
+					<p>
+						<a href='G370FA2021.html'>Fall 2021</a><br>
+						<a href='G370SP2021.html'>Spring 2021</a><br>
+						<a href='G370FA2020.html'>Fall 2020</a><br>
 						<a href='G370FA2019.html'>Fall 2019</a><br>
 						<a href="G370SP2019.html">Spring 2019</a><br>
 						<a href='G370FA2018.html'>Fall 2018</a><br>
@@ -234,535 +237,584 @@
 				</div>
 			</div>
 
+		</div>
 	</div>
-
-
 	<div class='container'>
+		<div class='row'>
 			<div class='col-md-12'>
-						<h2 class='page-header'>Final Projects</h2> 
+				<h2 class='page-header'>Final Projects</h2>
 				<br>
 				<br>
 			</div>
-	</div>
-
-	<div class="container">
-			<a href='2015FA/PDF/Fall2015AllenSam.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015AllenSam.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Incarceration vs. Representation      </h3>
-				<p><i>Sam Allen</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015BakkenKelsey.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015BakkenKelsey.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Carbon in the United States     </h3>
-				<p><i>Kelsey Bakken</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015BarrettGabriella.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015BarrettGabriella.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Kindertransport: Pen's Story      </h3>
-				<p><i>Gabriella Barrett</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015BecerraJasmin.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015BecerraJasmin.png' alt='...' class='final'>
-				<h3 class='finalProject'>   The Americas Upside Down     </h3>
-				<p><i>Jasmin Becerra</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015BritoKai.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015BritoKai.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Titanic Passengers: Country of Origin     </h3>
-				<p><i>Kai Brito</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015BurgessGenevieve.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015BurgessGenevieve.png' alt='...' class='final'>
-				<h3 class='finalProject'>   The Fastest ISPs in the United States     </h3>
-				<p><i>Genevieve Burgess</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015CalkinsCody.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015CalkinsCody.png' alt='...' class='final'>
-				<h3 class='finalProject'>     Nitrogen and Phosphorous in the Mississippi Watershed Source and Sink   </h3>
-				<p><i>Cody Calkins</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015ChangWoojin.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015ChangWoojin.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Geography of Asian America, 1860-1940      </h3>
-				<p><i>Woojin Chang</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015ChengDavid.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015ChengDavid.png' alt='...' class='final'>
-				<h3 class='finalProject'>   California's Recent Drought Crisis     </h3>
-				<p><i>David Cheng</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015ClementiTrevor.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015ClementiTrevor.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Global Cinema   </h3>
-				<p><i>Trevor Clementi</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015CrumpNaomi.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015CrumpNaomi.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Environmental Consequences of Livestock Production      </h3>
-				<p><i>Naomi Crump</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015DealZach.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015DealZach.png' alt='...' class='final'>
-				<h3 class='finalProject'>    Bandwagoners?!?    </h3>
-				<p><i>Zach Deal</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015FasciglioneNicole.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015FasciglioneNicole.png' alt='...' class='final'>
-				<h3 class='finalProject'>  UW Madison: Popular Abroad Destinations and Prices      </h3>
-				<p><i>Nicole Fasciglione</i></p>
-				</div></a>
-
-				<a href="2015FA/pdf/Fall2015_ScottFarley.jpg" target="_Blank">
-					<div class="col-md-4 col-sm-6 centerFinal">
-						<img src="2015FA/imgSq/Fall2015FarleyScott.png" alt="..." class="final">
-						<h3 class="finalProject"> Yosemite National Park</h3>
-						<p><i>Scott Farley</i></p>
-					</div></a>
-				
-				<a href='2015FA/PDF/Fall2015FazzioCaroline.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015FazzioCaroline.png' alt='...' class='final'>
-				<h3 class='finalProject'> Once Upon a Time...       </h3>
-				<p><i>Caroline Fazzio</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015FrankeMary.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015FrankeMary.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Fair Trade Coffee     </h3>
-				<p><i>Mary Franke</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015FredericksMeg.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015FredericksMeg.png' alt='...' class='final'>
-				<h3 class='finalProject'>    The Appalachian Trail    </h3>
-				<p><i>Meg Fredericks</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015GhanemHallah.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015GhanemHallah.png' alt='...' class='final'>
-				<h3 class='finalProject'>   A Guide to Getting Around the Isthmus     </h3>
-				<p><i>Hallah Ghanem</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015GleasonAbby.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015GleasonAbby.png' alt='...' class='final'>
-				<h3 class='finalProject'>   High Speed Rail: A Good Investment      </h3>
-				<p><i>Abby Gleason</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015GordonSela.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015GordonSela.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Public Art Not Public Enemy      </h3>
-				<p><i>Sela Gordon</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015GranadosLupe.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015GranadosLupe.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Popularity in the 2012 Presidential Election     </h3>
-				<p><i>Lupe Granados</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015HarrisMaren.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015HarrisMaren.png' alt='...' class='final'>
-				<h3 class='finalProject'>    Where is our water going?    </h3>
-				<p><i>Maren Harris</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015HollowellMorgan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015HollowellMorgan.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Is Hockey Becoming One of America's Favorites?      </h3>
-				<p><i>Morgan Hollowell</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015JingDuanyang.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015JingDuanyang.png' alt='...' class='final'>
-				<h3 class='finalProject'> Where should you live? Madison Rent Affordability       </h3>
-				<p><i>Duanyang Jing</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015JoButterisKadie.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015JoButterisKadie.png' alt='...' class='final'>
-				<h3 class='finalProject'>   History in Danger     </h3>
-				<p><i>Kadie Jo Butteris</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015JorgensonCassie.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015JorgensonCassie.png' alt='...' class='final'>
-				<h3 class='finalProject'>   The Struggle for the American Dream     </h3>
-				<p><i>Cassie Jorgenson</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015KajcsaraczAlexandru.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015KajcsaraczAlexandru.png' alt='...' class='final'>
-				<h3 class='finalProject'> States Legal Cannabis Status vs. Arrest Rates per Capita       </h3>
-				<p><i>Alexandru Kajcsaracz</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015KretzRobert.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015KretzRobert.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Streamlined      </h3>
-				<p><i>Robert Kretz</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015LoisAbby.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015LoisAbby.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Global Gender Gap: A World of Inequality     </h3>
-				<p><i>Abby Lois</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015LyonsPaige.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015LyonsPaige.png' alt='...' class='final'>
-				<h3 class='finalProject'>  finding common ground      </h3>
-				<p><i>Paige Lyons</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015MartinEmma.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015MartinEmma.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Most Popular Brand By State     </h3>
-				<p><i>Emma Martin</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015McFarlaneDuncan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015McFarlaneDuncan.png' alt='...' class='final'>
-				<h3 class='finalProject'> A Rapidly Changing World       </h3>
-				<p><i>Duncan McFarlane</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015McGilliganTobin.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015McGilliganTobin.png' alt='...' class='final'>
-				<h3 class='finalProject'> Landscapes of Discrimination       </h3>
-				<p><i>Tobin McGilligan</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015MendelowitzJosh.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015MendelowitzJosh.png' alt='...' class='final'>
-				<h3 class='finalProject'>    MLS:40 @ 40    </h3>
-				<p><i>Josh Mendelowitz</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015MendezAndres.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015MendezAndres.png' alt='...' class='final'>
-				<h3 class='finalProject'>   DOTA 2: THe International 2015 Earnings     </h3>
-				<p><i>Andres Mendez</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015MossStarr.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015MossStarr.png' alt='...' class='final'>
-				<h3 class='finalProject'> And by Time of Day        </h3>
-				<p><i>Starr Moss</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015NelsonAinsley.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015NelsonAinsley.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Representation Matters      </h3>
-				<p><i>Ainsley Nelson</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015NixonKristina.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015NixonKristina.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Changing Glaciers and Sea Ice      </h3>
-				<p><i>Kristina Nixon</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015OConnorErin.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015OConnorErin.png' alt='...' class='final'>
-				<h3 class='finalProject'> AAU Sexual Assault Survey       </h3>
-				<p><i>Erin O'Connor</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015OstermeierAnna.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015OstermeierAnna.png' alt='...' class='final'>
-				<h3 class='finalProject'>   The Fast Fashion Industry     </h3>
-				<p><i>Anna Ostermeier</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015PattonLiam.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015PattonLiam.png' alt='...' class='final'>
-				<h3 class='finalProject'> The Salmon Area Damned in Washington State       </h3>
-				<p><i>Liam Patton</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015PerttunenEric.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015PerttunenEric.png' alt='...' class='final'>
-				<h3 class='finalProject'> The Tiger: A Success Story       </h3>
-				<p><i>Eric Perttunen</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015RebmanClaire.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015RebmanClaire.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Where are Endangered and Endemic Species of Amphibians?      </h3>
-				<p><i>Claire Rebman</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015RobsonNatalee.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015RobsonNatalee.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Many Markets, Limited Access      </h3>
-				<p><i>Natalee Robson</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015RodriguezSergio.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015RodriguezSergio.png' alt='...' class='final'>
-				<h3 class='finalProject'>   American Terrorism: Mapping the Victims of the 2015 Mass Shootings     </h3>
-				<p><i>Sergio Rodriguez</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015RossaAmelia.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015RossaAmelia.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Oil Palm: Production, consumption... Consequences?     </h3>
-				<p><i>Amelia Rossa</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SajbelJosie.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SajbelJosie.png' alt='...' class='final'>
-				<h3 class='finalProject'> Number of NCAA D1 Women's VOlleyball Championships By University       </h3>
-				<p><i>Josie Sajbel</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SanchezJake.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SanchezJake.png' alt='...' class='final'>
-				<h3 class='finalProject'> Milwaukee County Separated and Unequal       </h3>
-				<p><i>Jake Sanchez</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SchmidtCourtney.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SchmidtCourtney.png' alt='...' class='final'>
-				<h3 class='finalProject'> Ancient Journey Up the River From Cahokia to Trempealeau       </h3>
-				<p><i>Courtney Schmidt</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SchopfBritney.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SchopfBritney.png' alt='...' class='final'>
-				<h3 class='finalProject'>   You're on The Square...Now What?     </h3>
-				<p><i>Britney Schopf</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SchroederZoe.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SchroederZoe.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Air Pollution in Wisconsin      </h3>
-				<p><i>Zoe Schroeder</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SchumacherDan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SchumacherDan.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Where Next? The best places for young professionals and recent graduates      </h3>
-				<p><i>Dan Schumacher</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SmithMatt.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SmithMatt.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Does Wisconsin Have an Ozone Problem?     </h3>
-				<p><i>Matt Smith</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SmithMichael.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SmithMichael.png' alt='...' class='final'>
-				<h3 class='finalProject'>        </h3>
-				<p><i>Michael Smith</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SmithRyan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SmithRyan.png' alt='...' class='final'>
-				<h3 class='finalProject'> Reported UFO Sightings Since 1950     </h3>
-				<p><i>Ryan Smith</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SongZihan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SongZihan.png' alt='...' class='final'>
-				<h3 class='finalProject'> 武 汉       </h3>
-				<p><i>Zihan Song</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015StarryAlli.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015StarryAlli.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Elusive European Monsters      </h3>
-				<p><i>Alli Starry</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015StMartinKevin.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015StMartinKevin.png' alt='...' class='final'>
-				<h3 class='finalProject'> Poisoning Our Plate       </h3>
-				<p><i>Kevin StMartin</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015StrayerMark.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015StrayerMark.png' alt='...' class='final'>
-				<h3 class='finalProject'> Denali National Park Soundscape Inventory       </h3>
-				<p><i>Mark Strayer</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015StrugerGabriella.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015StrugerGabriella.png' alt='...' class='final'>
-				<h3 class='finalProject'> Losing Ground       </h3>
-				<p><i>Gabriella Struger</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015SyndergaardJacob.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015SyndergaardJacob.png' alt='...' class='final'>
-				<h3 class='finalProject'>  520 Acre Sportsman's Paradise      </h3>
-				<p><i>Jacob Syndergaard</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015TaylorSarah.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015TaylorSarah.png' alt='...' class='final'>
-				<h3 class='finalProject'>  Enduring Peoples: Societies that have stood the test of time      </h3>
-				<p><i>Sarah Taylor</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015TsoumasMegan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015TsoumasMegan.png' alt='...' class='final'>
-				<h3 class='finalProject'> The New digital Divide       </h3>
-				<p><i>Megan Tsoumas</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015VriezenGrace.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015VriezenGrace.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Space and impact of ferguson protests     </h3>
-				<p><i>Grace Vriezen</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015WeinCameron.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015WeinCameron.png' alt='...' class='final'>
-				<h3 class='finalProject'>  How Green is Green?      </h3>
-				<p><i>Cameron Wein</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015WierschkeMeghan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015WierschkeMeghan.png' alt='...' class='final'>
-				<h3 class='finalProject'> Combating Energy Consumption with Sutainable Production       </h3>
-				<p><i>Meghan Wierschke</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015WitzMerina.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015WitzMerina.png' alt='...' class='final'>
-				<h3 class='finalProject'>  The Weckwerth Family Farm      </h3>
-				<p><i>Merina Witz</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015WongAna.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015WongAna.png' alt='...' class='final'>
-				<h3 class='finalProject'>   2012-2015 Involvement and Effect of City Year     </h3>
-				<p><i>Ana Wong</i></p>
-				</div></a>
-				
-				<a href='2015FA/PDF/Fall2015ZarleyAlex.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6 centerFinal'>
-				<img src='2015FA/ImgSq/Fall2015ZarleyAlex.png' alt='...' class='final'>
-				<h3 class='finalProject'>   Silk Road in the 1st Century     </h3>
-				<p><i>Alex Zarley</i></p>
-				</div></a>
-	</div>
-	
-
-		
-</div>
-
-<footer class="footer navbar-fixed-bottom">
-		<div class="container">
-		    <div class="row">
-		        <div class="align-center">
-		            <br>
-		            <img src="../../img/UWCL_logo_gray.png">
-
-		            <p>Copyright 2019&copy; All Rights Reserved.</p>
-		        </div>
-		    </div>
 		</div>
-</footer>
 
-<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-      <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="../../js/jquery.cookie.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.ba-cond.min.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.slitslider.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.prettyPhoto.js" type="text/javascript">
-</script>
-<script src="../../js/custom.js" type="text/javascript">
-</script>
-<script src="../../js/main.js" type="text/javascript">
-</script>
+		<div class="row">
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015AllenSam.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015AllenSam.png' alt='...' class='final'>
+					<h3 class='finalProject'> Incarceration vs. Representation </h3>
+					<p><i>Sam Allen</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015BakkenKelsey.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015BakkenKelsey.png' alt='...' class='final'>
+					<h3 class='finalProject'> Carbon in the United States </h3>
+					<p><i>Kelsey Bakken</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015BarrettGabriella.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015BarrettGabriella.png' alt='...' class='final'>
+					<h3 class='finalProject'> Kindertransport: Pen's Story </h3>
+					<p><i>Gabriella Barrett</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015BecerraJasmin.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015BecerraJasmin.png' alt='...' class='final'>
+					<h3 class='finalProject'> The Americas Upside Down </h3>
+					<p><i>Jasmin Becerra</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015BritoKai.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015BritoKai.png' alt='...' class='final'>
+					<h3 class='finalProject'> Titanic Passengers: Country of Origin </h3>
+					<p><i>Kai Brito</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015BurgessGenevieve.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015BurgessGenevieve.png' alt='...' class='final'>
+					<h3 class='finalProject'> The Fastest ISPs in the United States </h3>
+					<p><i>Genevieve Burgess</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015CalkinsCody.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015CalkinsCody.png' alt='...' class='final'>
+					<h3 class='finalProject'> Nitrogen and Phosphorous in the Mississippi Watershed Source and Sink
+					</h3>
+					<p><i>Cody Calkins</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015ChangWoojin.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015ChangWoojin.png' alt='...' class='final'>
+					<h3 class='finalProject'> Geography of Asian America, 1860-1940 </h3>
+					<p><i>Woojin Chang</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015ChengDavid.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015ChengDavid.png' alt='...' class='final'>
+					<h3 class='finalProject'> California's Recent Drought Crisis </h3>
+					<p><i>David Cheng</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015ClementiTrevor.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015ClementiTrevor.png' alt='...' class='final'>
+					<h3 class='finalProject'> Global Cinema </h3>
+					<p><i>Trevor Clementi</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015CrumpNaomi.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015CrumpNaomi.png' alt='...' class='final'>
+					<h3 class='finalProject'> Environmental Consequences of Livestock Production </h3>
+					<p><i>Naomi Crump</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015DealZach.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015DealZach.png' alt='...' class='final'>
+					<h3 class='finalProject'> Bandwagoners?!? </h3>
+					<p><i>Zach Deal</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2015FA/Fall2015FasciglioneNicole.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015FasciglioneNicole.png' alt='...' class='final'>
+					<h3 class='finalProject'> UW Madison: Popular Abroad Destinations and Prices </h3>
+					<p><i>Nicole Fasciglione</i></p>
+				</a>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 project">
+				<a href="2015FA/pdf/Fall2015_ScottFarley.jpg" class="projectLink" target="_Blank">
+					<img src="2015FA/imgSq/Fall2015FarleyScott.png" alt="..." class="final">
+					<h3 class="finalProject"> Yosemite National Park</h3>
+					<p><i>Scott Farley</i></p>
+				</a>
+			</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015FazzioCaroline.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015FazzioCaroline.png' alt='...' class='final'>
+				<h3 class='finalProject'> Once Upon a Time... </h3>
+				<p><i>Caroline Fazzio</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015FrankeMary.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015FrankeMary.png' alt='...' class='final'>
+				<h3 class='finalProject'> Fair Trade Coffee </h3>
+				<p><i>Mary Franke</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015FredericksMeg.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015FredericksMeg.png' alt='...' class='final'>
+				<h3 class='finalProject'> The Appalachian Trail </h3>
+				<p><i>Meg Fredericks</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015GhanemHallah.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015GhanemHallah.png' alt='...' class='final'>
+				<h3 class='finalProject'> A Guide to Getting Around the Isthmus </h3>
+				<p><i>Hallah Ghanem</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015GleasonAbby.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015GleasonAbby.png' alt='...' class='final'>
+				<h3 class='finalProject'> High Speed Rail: A Good Investment </h3>
+				<p><i>Abby Gleason</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015GordonSela.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015GordonSela.png' alt='...' class='final'>
+				<h3 class='finalProject'> Public Art Not Public Enemy </h3>
+				<p><i>Sela Gordon</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015GranadosLupe.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015GranadosLupe.png' alt='...' class='final'>
+				<h3 class='finalProject'> Popularity in the 2012 Presidential Election </h3>
+				<p><i>Lupe Granados</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015HarrisMaren.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015HarrisMaren.png' alt='...' class='final'>
+				<h3 class='finalProject'> Where is our water going? </h3>
+				<p><i>Maren Harris</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015HollowellMorgan.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015HollowellMorgan.png' alt='...' class='final'>
+				<h3 class='finalProject'> Is Hockey Becoming One of America's Favorites? </h3>
+				<p><i>Morgan Hollowell</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015JingDuanyang.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015JingDuanyang.png' alt='...' class='final'>
+				<h3 class='finalProject'> Where should you live? Madison Rent Affordability </h3>
+				<p><i>Duanyang Jing</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015JoButterisKadie.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015JoButterisKadie.png' alt='...' class='final'>
+				<h3 class='finalProject'> History in Danger </h3>
+				<p><i>Kadie Jo Butteris</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015JorgensonCassie.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015JorgensonCassie.png' alt='...' class='final'>
+				<h3 class='finalProject'> The Struggle for the American Dream </h3>
+				<p><i>Cassie Jorgenson</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015KajcsaraczAlexandru.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015KajcsaraczAlexandru.png' alt='...' class='final'>
+				<h3 class='finalProject'> States Legal Cannabis Status vs. Arrest Rates per Capita </h3>
+				<p><i>Alexandru Kajcsaracz</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015KretzRobert.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015KretzRobert.png' alt='...' class='final'>
+				<h3 class='finalProject'> Streamlined </h3>
+				<p><i>Robert Kretz</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015LoisAbby.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015LoisAbby.png' alt='...' class='final'>
+				<h3 class='finalProject'> Global Gender Gap: A World of Inequality </h3>
+				<p><i>Abby Lois</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015LyonsPaige.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015LyonsPaige.png' alt='...' class='final'>
+				<h3 class='finalProject'> finding common ground </h3>
+				<p><i>Paige Lyons</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015MartinEmma.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015MartinEmma.png' alt='...' class='final'>
+				<h3 class='finalProject'> Most Popular Brand By State </h3>
+				<p><i>Emma Martin</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015McFarlaneDuncan.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015McFarlaneDuncan.png' alt='...' class='final'>
+				<h3 class='finalProject'> A Rapidly Changing World </h3>
+				<p><i>Duncan McFarlane</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015McGilliganTobin.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015McGilliganTobin.png' alt='...' class='final'>
+				<h3 class='finalProject'> Landscapes of Discrimination </h3>
+				<p><i>Tobin McGilligan</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015MendelowitzJosh.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015MendelowitzJosh.png' alt='...' class='final'>
+				<h3 class='finalProject'> MLS:40 @ 40 </h3>
+				<p><i>Josh Mendelowitz</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015MendezAndres.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015MendezAndres.png' alt='...' class='final'>
+				<h3 class='finalProject'> DOTA 2: THe International 2015 Earnings </h3>
+				<p><i>Andres Mendez</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015MossStarr.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015MossStarr.png' alt='...' class='final'>
+				<h3 class='finalProject'> And by Time of Day </h3>
+				<p><i>Starr Moss</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015NelsonAinsley.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015NelsonAinsley.png' alt='...' class='final'>
+				<h3 class='finalProject'> Representation Matters </h3>
+				<p><i>Ainsley Nelson</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015NixonKristina.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015NixonKristina.png' alt='...' class='final'>
+				<h3 class='finalProject'> Changing Glaciers and Sea Ice </h3>
+				<p><i>Kristina Nixon</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015OConnorErin.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015OConnorErin.png' alt='...' class='final'>
+				<h3 class='finalProject'> AAU Sexual Assault Survey </h3>
+				<p><i>Erin O'Connor</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015OstermeierAnna.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015OstermeierAnna.png' alt='...' class='final'>
+				<h3 class='finalProject'> The Fast Fashion Industry </h3>
+				<p><i>Anna Ostermeier</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015PattonLiam.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015PattonLiam.png' alt='...' class='final'>
+				<h3 class='finalProject'> The Salmon Area Damned in Washington State </h3>
+				<p><i>Liam Patton</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015PerttunenEric.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015PerttunenEric.png' alt='...' class='final'>
+				<h3 class='finalProject'> The Tiger: A Success Story </h3>
+				<p><i>Eric Perttunen</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015RebmanClaire.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015RebmanClaire.png' alt='...' class='final'>
+				<h3 class='finalProject'> Where are Endangered and Endemic Species of Amphibians? </h3>
+				<p><i>Claire Rebman</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015RobsonNatalee.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015RobsonNatalee.png' alt='...' class='final'>
+				<h3 class='finalProject'> Many Markets, Limited Access </h3>
+				<p><i>Natalee Robson</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015RodriguezSergio.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015RodriguezSergio.png' alt='...' class='final'>
+				<h3 class='finalProject'> American Terrorism: Mapping the Victims of the 2015 Mass Shootings </h3>
+				<p><i>Sergio Rodriguez</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015RossaAmelia.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015RossaAmelia.png' alt='...' class='final'>
+				<h3 class='finalProject'> Oil Palm: Production, consumption... Consequences? </h3>
+				<p><i>Amelia Rossa</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SajbelJosie.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SajbelJosie.png' alt='...' class='final'>
+				<h3 class='finalProject'> Number of NCAA D1 Women's VOlleyball Championships By University </h3>
+				<p><i>Josie Sajbel</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SanchezJake.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SanchezJake.png' alt='...' class='final'>
+				<h3 class='finalProject'> Milwaukee County Separated and Unequal </h3>
+				<p><i>Jake Sanchez</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SchmidtCourtney.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SchmidtCourtney.png' alt='...' class='final'>
+				<h3 class='finalProject'> Ancient Journey Up the River From Cahokia to Trempealeau </h3>
+				<p><i>Courtney Schmidt</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SchopfBritney.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SchopfBritney.png' alt='...' class='final'>
+				<h3 class='finalProject'> You're on The Square...Now What? </h3>
+				<p><i>Britney Schopf</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SchroederZoe.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SchroederZoe.png' alt='...' class='final'>
+				<h3 class='finalProject'> Air Pollution in Wisconsin </h3>
+				<p><i>Zoe Schroeder</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SchumacherDan.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SchumacherDan.png' alt='...' class='final'>
+				<h3 class='finalProject'> Where Next? The best places for young professionals and recent graduates </h3>
+				<p><i>Dan Schumacher</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SmithMatt.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SmithMatt.png' alt='...' class='final'>
+				<h3 class='finalProject'> Does Wisconsin Have an Ozone Problem? </h3>
+				<p><i>Matt Smith</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SmithMichael.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SmithMichael.png' alt='...' class='final'>
+				<h3 class='finalProject'> </h3>
+				<p><i>Michael Smith</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SmithRyan.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SmithRyan.png' alt='...' class='final'>
+				<h3 class='finalProject'> Reported UFO Sightings Since 1950 </h3>
+				<p><i>Ryan Smith</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SongZihan.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SongZihan.png' alt='...' class='final'>
+				<h3 class='finalProject'> 武 汉 </h3>
+				<p><i>Zihan Song</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015StarryAlli.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015StarryAlli.png' alt='...' class='final'>
+				<h3 class='finalProject'> Elusive European Monsters </h3>
+				<p><i>Alli Starry</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015StMartinKevin.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015StMartinKevin.png' alt='...' class='final'>
+				<h3 class='finalProject'> Poisoning Our Plate </h3>
+				<p><i>Kevin StMartin</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015StrayerMark.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015StrayerMark.png' alt='...' class='final'>
+				<h3 class='finalProject'> Denali National Park Soundscape Inventory </h3>
+				<p><i>Mark Strayer</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015StrugerGabriella.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015StrugerGabriella.png' alt='...' class='final'>
+				<h3 class='finalProject'> Losing Ground </h3>
+				<p><i>Gabriella Struger</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015SyndergaardJacob.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015SyndergaardJacob.png' alt='...' class='final'>
+				<h3 class='finalProject'> 520 Acre Sportsman's Paradise </h3>
+				<p><i>Jacob Syndergaard</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015TaylorSarah.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015TaylorSarah.png' alt='...' class='final'>
+				<h3 class='finalProject'> Enduring Peoples: Societies that have stood the test of time </h3>
+				<p><i>Sarah Taylor</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015TsoumasMegan.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015TsoumasMegan.png' alt='...' class='final'>
+				<h3 class='finalProject'> The New digital Divide </h3>
+				<p><i>Megan Tsoumas</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015VriezenGrace.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015VriezenGrace.png' alt='...' class='final'>
+				<h3 class='finalProject'> Space and impact of ferguson protests </h3>
+				<p><i>Grace Vriezen</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015WeinCameron.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015WeinCameron.png' alt='...' class='final'>
+				<h3 class='finalProject'> How Green is Green? </h3>
+				<p><i>Cameron Wein</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015WierschkeMeghan.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015WierschkeMeghan.png' alt='...' class='final'>
+				<h3 class='finalProject'> Combating Energy Consumption with Sutainable Production </h3>
+				<p><i>Meghan Wierschke</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015WitzMerina.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015WitzMerina.png' alt='...' class='final'>
+				<h3 class='finalProject'> The Weckwerth Family Farm </h3>
+				<p><i>Merina Witz</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015WongAna.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015WongAna.png' alt='...' class='final'>
+				<h3 class='finalProject'> 2012-2015 Involvement and Effect of City Year </h3>
+				<p><i>Ana Wong</i></p>
+			</a>
+		</div>
+
+		<div class='col-lg-4 col-md-6 project'>
+			<a href='../../projects/G370/2015FA/Fall2015ZarleyAlex.pdf' class="projectLink" target='_blank'>
+				<img src='2015FA/ImgSq/Fall2015ZarleyAlex.png' alt='...' class='final'>
+				<h3 class='finalProject'> Silk Road in the 1st Century </h3>
+				<p><i>Alex Zarley</i></p>
+			</a>
+		</div>
+	</div>
+
+
+
+	</div>
+
+	<site-footer></site-footer>
+
+	<script src="../../js/jquery-3.1.1.js" type="text/javascript"></script>
+	<script src="../../js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../js/html_templates.js" type="text/javascript"></script>
+	<script src="../../js/main.js" type="text/javascript"></script>
 
 
 </body>
+
 </html>

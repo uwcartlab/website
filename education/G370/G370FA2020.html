@@ -2,110 +2,99 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
 
-<!-- Basic Page Needs
+	<!-- Basic Page Needs
 ================================================== -->
-<meta charset="utf-8">
-<title>UWCL</title>
-<meta name="description" content="">
-<meta name="author" content="">
+	<meta charset="utf-8">
+	<title>UWCL</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-<style>
-	#results{
-	min-height: 100%!important;
-	overflow: auto;
-	margin-bottom: 50px!important;
-	padding-bottom: 50px!important;
-	}
-	#ajaxloader{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	}
+	<style>
+		#results {
+			min-height: 100% !important;
+			overflow: auto;
+			margin-bottom: 50px !important;
+			padding-bottom: 50px !important;
+		}
 
-	ol li:before{
-	background-color: none !important;
-	}
-	footer{
-	margin-top: 50px;
-	}
-	.img-responsive{
-	position: relative;
-	margin-right:0%!important;
-	margin-left:22.5%!important;
-	padding:0px!important;
-	}
-	.carousel-inner > .item > img {
-	margin: 0 auto!important;
-	}
+		#ajaxloader {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
-	.edu{
-	max-width: 100%;
-	height: auto;
-	}
+		ol li:before {
+			background-color: none !important;
+		}
 
-	.course{
-	padding-bottom: 50px;
-	}
-</style>
+		footer {
+			margin-top: 50px;
+		}
 
-<!-- Mobile Specific Metas
+		.d-block w-100 {
+			position: relative;
+			margin-right: 0% !important;
+			margin-left: 22.5% !important;
+			padding: 0px !important;
+		}
+
+		.carousel-inner>.item>img {
+			margin: 0 auto !important;
+		}
+
+		.edu {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.course {
+			padding-bottom: 50px;
+		}
+	</style>
+
+	<!-- Mobile Specific Metas
 ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!-- CSS
+	<!-- CSS
 ================================================== -->
-<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 
 
 
-<!-- Fonts
+	<!-- Fonts
 ================================================== -->
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet'
+		type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Javascript
+	<!-- Javascript
 ================================================== -->
-<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
+	<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
 
-<!-- Favicons
+	<!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="../../img/favicon.ico">
-<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
 
 </head>
 
 <body>
-<!--Collapsing NavBar --> 
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="../../index.html"><img src="../../img/UWCL_logo_white.png" alt="UW Cartography Lab" style="width:80px;height:auto;"></a>
-        </div>
-
-	    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-	        <ul class="nav navbar-nav navText">
-	            <li><a href="../../production/index.html" id="navText">Production</a></li>
-	            <li><a href="../../research/index.html" id="navText">Research</a></li>
-	            <li><a href="../../index.html" id="navText">Education</a></li>
-        <li><a href="../../people/index.html" id="navText">People</a></li>
-           </ul>
-	    </div>
-      </div>
-    </nav>
-<!--end of header --> 
+	<!--Collapsing NavBar -->
+	<site-header></site-header>
+	<!--end of header -->
 
 	<div class='container'>
 		<div class='col-md-12'>
@@ -114,324 +103,327 @@
 
 			<div id="productionCarousel" class="carousel slide" data-ride="carousel">
 
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-				    <li data-target="#productionCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#productionCarousel" data-slide-to="1"></li>
-				    <li data-target="#productionCarousel" data-slide-to="2"></li>
-				    <li data-target="#productionCarousel" data-slide-to="3"></li>
-				    <li data-target="#productionCarousel" data-slide-to="4"></li>
-			  </ol>
+				<!-- Indicators -->
+				<div class="carousel-indicators">
+					<button type="button" class="indicator-button active" data-bs-target="#productionCarousel"
+						data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="4" aria-label="Slide 5"></button>
+				</div>
 
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-				    
-				    <div class="item active">
-				      	
-				      	<img src="2020FA/imgWide/Fall2020WilsonMatthew.png" alt="...">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
 
-				    </div>
+					<div class="carousel-item active" data-bs-interval="5000">
 
-				    <div class="item">
+						<img src="2020FA/imgWide/Fall2020WilsonMatthew.png" class='d-block w-100' alt="...">
 
-				      	<img src="2020FA/imgWide/Fall2020SwansonJosef.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-				    <div class="item">
+						<img src="2020FA/imgWide/Fall2020SwansonJosef.png" class='d-block w-100' alt="...">
 
-				      	<img src="2020FA/imgWide/Fall2020MarlinLee.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-				    <div class="item">
+						<img src="2020FA/imgWide/Fall2020MarlinLee.png" class='d-block w-100' alt="...">
 
-				    	<img src="2020FA/imgWide/Fall2020CervenyErin.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
 
-					<div class="item">
+						<img src="2020FA/imgWide/Fall2020CervenyErin.png" class='d-block w-100' alt="...">
 
-				    	<img src="2020FA/imgWide/Fall2020PetersonMika.png" class='img-responsive' alt="...">
+					</div>
 
-				    </div>
+					<div class="carousel-item" data-bs-interval="5000">
+
+						<img src="2020FA/imgWide/Fall2020PetersonMika.png" class='d-block w-100' alt="...">
+
+					</div>
 
 
-			  </div>
+				</div>
 
-			  <!-- Left and right controls -->
-			  <a class="left carousel-control" href="#productionCarousel" role="button" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#productionCarousel" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
+				<!-- Left and right controls -->
+				<button class="carousel-control-prev" data-bs-target="#productionCarousel" type="button"
+					data-bs-slide="prev">
+					<span class="fa fa-chevron-left fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" data-bs-target="#productionCarousel" type="button"
+					data-bs-slide="next">
+					<span class="fa fa-chevron-right fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
 		</div>
 	</div>
 
 	<div class='container'>
-		<div class='overview'>
+		<div class='row overview'>
 
 			<div class='col-md-8'>
 
 				<div class='course'>
 
 					<h2>Geography 370: Introduction to Cartography</h2>
-					
-					<p>This course provides a general introduction to cartography, broadly defined as the art, science, and ethics of mapmaking and map use. It – and the UW Cartography curriculum in general – focuses upon the design of maps, drawing from research and practice on graphic design, information visualization, and semiotics, perspectives that students are unlikely to receive in other GIS courses. Specifically, the course emphasizes mapmaking over map use (compared to 170) and print mapping over web-based or interactive mapping (compared to 572 and 575, respectively). The course is divided into two components: lectures and labs.</p>
+
+					<p>This course provides a general introduction to cartography, broadly defined as the art, science,
+						and ethics of mapmaking and map use. It – and the UW Cartography curriculum in general – focuses
+						upon the design of maps, drawing from research and practice on graphic design, information
+						visualization, and semiotics, perspectives that students are unlikely to receive in other GIS
+						courses. Specifically, the course emphasizes mapmaking over map use (compared to 170) and print
+						mapping over web-based or interactive mapping (compared to 572 and 575, respectively). The
+						course is divided into two components: lectures and labs.</p>
 
 					<p>Check out past syllabi and finals projects below!</p>
 
 					<h2>Fall 2020</h2>
 					<p>Instructor: Robert E. Roth<br>
-					TA: Atlas Guo</p>
-					<h3 class='page-header'><a href="../assets/syllabi/G370_fall2019.pdf" target="_block">Fall 2020 Syllabus</a> </h3>	
+						TA: Atlas Guo</p>
+					<h3 class='page-header'><a href="../../projects/syllabi/G370_fall2019.pdf" target="_block">Fall 2020
+							Syllabus</a> </h3>
 
 				</div>
 
 			</div>
 
-		</div>
-		
-			<div class='col-md-4'>
-					<h3>Education</h3>
-
-			 		<div>
-							<p>	
-								<a href="../curriculum.html">Curriculum Overview</a><br>
-								<a href="G370FA2020.html">G370: Introduction to Cart</a><br>
-								<a href="../G572/G572FA2022.html">G572: Graphic Design</a><br>
-								<a href="../G575/G575SP2020.html">G575: Interactive Cart</a><br>
-								<a href="../G970.html">G970: Cartography Seminar</a><br>
-								<a href="../designChallenge.html">Design Challenge</a><br>
-								<a href="../CLES.html">Cart Lab Education Series (CLES)</a><br>
-								<a href="../eduResources.html">Educational Resources </a><br>					
-								<a href="../../contact.html">Contact Us</a><br>
-
-
-	
-					</div>
-			</div>
 
 			<div class='col-md-4'>
-					<h3>Final Projects</h3>
-	
-					 <div>
-						 <p>	
-							<a href='G370FA2020.html'>Fall 2020</a><br>	
-							<a href='G370FA2019.html'>Fall 2019</a><br>
-							<a href="G370SP2019.html">Spring 2019</a><br>
-							<a href='G370FA2018.html'>Fall 2018</a><br>
-							<a href="G370SP2016.html">Spring 2016</a><br>
-							<a href="G370FA2015.html">Fall 2015</a><br>
-							<a href="G370FA2014.html">Fall 2014</a><br>
-							<a href="G370FA2013.html">Fall 2013</a><br>
-							<a href="G370FA2012.html">Fall 2012</a><br>
-							<a href="G370SP2012.html">Spring 2012</a><br>
-							<a href="G370FA2011.html">Fall 2011</a><br>
-	
-	
-					</div>
+				<h3>Education</h3>
+
+				<div>
+					<p>
+						<a href="../curriculum.html">Curriculum Overview</a><br>
+						<a href="G370FA2021.html">G370: Introduction to Cart</a><br>
+						<a href="../G572/G572FA2022.html">G572: Graphic Design</a><br>
+						<a href="../G575/G575SP2021.html">G575: Interactive Cart</a><br>
+						<a href="../G970.html">G970: Cartography Seminar</a><br>
+						<a href="../webmapping.html">Web Mapping Workbook</a><br>
+						<a href="../sdg.html">Mapping for a Sustainable World Textbook</a><br>
+						<a href="../QGISTutorials.html">QGIS Open Source Tutorials</a><br>
+						<a href="../designChallenge.html">Design Challenge</a><br>
+						<a href="../CLES.html">Cart Lab Education Series (CLES)</a><br>
+						<a href="../eduResources.html">Educational Resources </a><br>
+						<a href="../../github.html">Github Projects</a><br>
+						<a href="../../contact.html">Contact Us</a><br>
+
+
+				</div>
+				<h3>Final Projects</h3>
+
+				<div>
+					<p>
+						<a href='G370FA2021.html'>Fall 2021</a><br>
+						<a href='G370SP2021.html'>Spring 2021</a><br>
+						<a href='G370FA2020.html'>Fall 2020</a><br>
+						<a href='G370FA2019.html'>Fall 2019</a><br>
+						<a href="G370SP2019.html">Spring 2019</a><br>
+						<a href='G370FA2018.html'>Fall 2018</a><br>
+						<a href="G370SP2016.html">Spring 2016</a><br>
+						<a href="G370FA2015.html">Fall 2015</a><br>
+						<a href="G370FA2014.html">Fall 2014</a><br>
+						<a href="G370FA2013.html">Fall 2013</a><br>
+						<a href="G370FA2012.html">Fall 2012</a><br>
+						<a href="G370SP2012.html">Spring 2012</a><br>
+						<a href="G370FA2011.html">Fall 2011</a><br>
+
+
+				</div>
 			</div>
-	
-		</div>
 
-
-
-	<div class='container'>
-			<div class='col-md-12'>
-						<h2 class='page-header'>Final Projects</h2> 
-				<br>
-				<br>
 		</div>
 	</div>
 
-		<div class='container'>
-				<a href='2020FA/PDF/Fall2020AsendorfElizabeth.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020AsendorfElizabeth.png' alt='...' class='final'>
-				<h3 class='finalProject'>Gender Wage Gap Around the World</h3>
-				<p><i>Elizabeth Asendorf</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020CalawayRiley.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020CalawayRiley.png' alt='...' class='final'>
-				<h3 class='finalProject'>Wisconsin Inland Musky Lakes Producivity by County</h3>
-				<p><i>Riley Calaway</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020CervenyErin.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020CervenyErin.png' alt='...' class='final'>
-				<h3 class='finalProject'>Wisconsin State Park & Forest: Attendance Counts 2018</h3>
-				<p><i>Erin Cerveny</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020ChamernikConnor.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020ChamernikConnor.png' alt='...' class='final'>
-				<h3 class='finalProject'>How Well is the Contiguous United States Using their Solar Potential?</h3>
-				<p><i>Connor Chamernik</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020FoltmanLeah.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020FoltmanLeah.png' alt='...' class='final'>
-				<h3 class='finalProject'>Month Matters! COVID-19 Infection in Milwaukee County</h3>
-				<p><i>Leah Foltman</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020GarciaDaisy.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020GarciaDaisy.png' alt='...' class='final'>
-				<h3 class='finalProject'>Cows vs. Humans</h3>
-				<p><i>Daisy Garcia</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020GloverAerin.png' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020GloverAerin.png' alt='...' class='final'>
-				<h3 class='finalProject'>Trader Joe's and Unemployment in New York State</h3>
-				<p><i>Aerin Glover</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020GriffinJason.pdf' target='_blank'>
-					<div class='col-md-4 col-sm-6'>
+
+	<div class='container'>
+
+		<div class='row'>
+			<div class='col-md-12'>
+				<h2 class='page-header'>Final Projects</h2>
+				<br>
+				<br>
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020AsendorfElizabeth.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020AsendorfElizabeth.png' alt='...' class='final'>
+					<h3 class='finalProject'>Gender Wage Gap Around the World</h3>
+					<p><i>Elizabeth Asendorf</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020CalawayRiley.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020CalawayRiley.png' alt='...' class='final'>
+					<h3 class='finalProject'>Wisconsin Inland Musky Lakes Producivity by County</h3>
+					<p><i>Riley Calaway</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020CervenyErin.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020CervenyErin.png' alt='...' class='final'>
+					<h3 class='finalProject'>Wisconsin State Park & Forest: Attendance Counts 2018</h3>
+					<p><i>Erin Cerveny</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020ChamernikConnor.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020ChamernikConnor.png' alt='...' class='final'>
+					<h3 class='finalProject'>How Well is the Contiguous United States Using their Solar Potential?</h3>
+					<p><i>Connor Chamernik</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020FoltmanLeah.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020FoltmanLeah.png' alt='...' class='final'>
+					<h3 class='finalProject'>Month Matters! COVID-19 Infection in Milwaukee County</h3>
+					<p><i>Leah Foltman</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020GarciaDaisy.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020GarciaDaisy.png' alt='...' class='final'>
+					<h3 class='finalProject'>Cows vs. Humans</h3>
+					<p><i>Daisy Garcia</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020GloverAerin.png' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020GloverAerin.png' alt='...' class='final'>
+					<h3 class='finalProject'>Trader Joe's and Unemployment in New York State</h3>
+					<p><i>Aerin Glover</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020GriffinJason.pdf' class="projectLink" target='_blank'>
 					<img src='2020FA/ImgSq/Fall2020GriffinJason.png' alt='...' class='final'>
 					<h3 class='finalProject'>Lake Michigan Shipwrecks</h3>
 					<p><i>Jason Griffin</i></p>
-					</div></a>
+				</a>
+			</div>
 
-				<a href='2020FA/PDF/Fall2020HarveyGrace.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020HarveyGrace.png' alt='...' class='final'>
-				<h3 class='finalProject'>Historical and Current Prevalence of CWD in Deer</h3>
-				<p><i>Grace Harvey</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020HengstTyler.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020HengstTyler.png' alt='...' class='final'>
-				<h3 class='finalProject'>Provincial Population Change During the Early Dutch Golden Age: 1600-1650</h3>
-				<p><i>Tyler Hengst</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020KronserMegan.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020KronserMegan.png' alt='...' class='final'>
-				<h3 class='finalProject'>How Prexisting Conditions Affect Women and the U.S Population Ages 18-64</h3>
-				<p><i>Megan Kronser</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020LandwehrBenjamin.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020LandwehrBenjamin.png' alt='...' class='final'>
-				<h3 class='finalProject'>Coronavirus and Depression</h3>
-				<p><i>Benjamin Landwehr</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020MarlinLee.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020MarlinLee.png' alt='...' class='final'>
-				<h3 class='finalProject'>GDP of the United States by Largest Source</h3>
-				<p><i>Lee Marlin</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020MikulasAlex.png' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020MikulasAlex.png' alt='...' class='final'>
-				<h3 class='finalProject'>Driftless Trout Angling</h3>
-				<p><i>Alex Mikulas</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020PetersonMika.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020PetersonMika.png' alt='...' class='final'>
-				<h3 class='finalProject'>Who uses and who produces?</h3>
-				<p><i>Mika Peterson</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020PorterDevin.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020PorterDevin.png' alt='...' class='final'>
-				<h3 class='finalProject'>Electric Veins of the Pacific Northwest</h3>
-				<p><i>Devin Porter</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020RingleHolden.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020RingleHolden.png' alt='...' class='final'>
-				<h3 class='finalProject'>Foreigners at the Frontier: Findsites of Palmyrene-Associated Inscriptions in Dacia</h3>
-				<p><i>Holden Ringle</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020SwansonJosef.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020SwansonJosef.png' alt='...' class='final'>
-				<h3 class='finalProject'>Mask Usage and Group Size by Intersection on State Street</h3>
-				<p><i>Josef Swanson</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020WhalenGreg.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020WhalenGreg.png' alt='...' class='final'>
-				<h3 class='finalProject'>Pillars of Tomorrow</h3>
-				<p><i>Greg Whalen</i></p>
-				</div></a>
-				
-				<a href='2020FA/PDF/Fall2020WilsonMatthew.pdf' target='_blank'>
-				<div class='col-md-4 col-sm-6'>
-				<img src='2020FA/ImgSq/Fall2020WilsonMatthew.png' alt='...' class='final'>
-				<h3 class='finalProject'>Saint Helena: British Overseas Territory</h3>
-				<p><i>Matthew Wilson</i></p>
-				</div></a>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020HarveyGrace.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020HarveyGrace.png' alt='...' class='final'>
+					<h3 class='finalProject'>Historical and Current Prevalence of CWD in Deer</h3>
+					<p><i>Grace Harvey</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020HengstTyler.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020HengstTyler.png' alt='...' class='final'>
+					<h3 class='finalProject'>Provincial Population Change During the Early Dutch Golden Age: 1600-1650
+					</h3>
+					<p><i>Tyler Hengst</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020KronserMegan.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020KronserMegan.png' alt='...' class='final'>
+					<h3 class='finalProject'>How Prexisting Conditions Affect Women and the U.S Population Ages 18-64
+					</h3>
+					<p><i>Megan Kronser</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020LandwehrBenjamin.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020LandwehrBenjamin.png' alt='...' class='final'>
+					<h3 class='finalProject'>Coronavirus and Depression</h3>
+					<p><i>Benjamin Landwehr</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020MarlinLee.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020MarlinLee.png' alt='...' class='final'>
+					<h3 class='finalProject'>GDP of the United States by Largest Source</h3>
+					<p><i>Lee Marlin</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020MikulasAlex.png' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020MikulasAlex.png' alt='...' class='final'>
+					<h3 class='finalProject'>Driftless Trout Angling</h3>
+					<p><i>Alex Mikulas</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020PetersonMika.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020PetersonMika.png' alt='...' class='final'>
+					<h3 class='finalProject'>Who uses and who produces?</h3>
+					<p><i>Mika Peterson</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020PorterDevin.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020PorterDevin.png' alt='...' class='final'>
+					<h3 class='finalProject'>Electric Veins of the Pacific Northwest</h3>
+					<p><i>Devin Porter</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020RingleHolden.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020RingleHolden.png' alt='...' class='final'>
+					<h3 class='finalProject'>Foreigners at the Frontier: Findsites of Palmyrene-Associated Inscriptions
+						in Dacia</h3>
+					<p><i>Holden Ringle</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020SwansonJosef.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020SwansonJosef.png' alt='...' class='final'>
+					<h3 class='finalProject'>Mask Usage and Group Size by Intersection on State Street</h3>
+					<p><i>Josef Swanson</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020WhalenGreg.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020WhalenGreg.png' alt='...' class='final'>
+					<h3 class='finalProject'>Pillars of Tomorrow</h3>
+					<p><i>Greg Whalen</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G370/2020FA/Fall2020WilsonMatthew.pdf' class="projectLink" target='_blank'>
+					<img src='2020FA/ImgSq/Fall2020WilsonMatthew.png' alt='...' class='final'>
+					<h3 class='finalProject'>Saint Helena: British Overseas Territory</h3>
+					<p><i>Matthew Wilson</i></p>
+				</a>
+			</div>
 		</div>
-				
-			
 
-					
+	</div>
+	<br>
 
-
-
-		</div>
-		<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-			
-			
-
-	
-		
-
-	
-<!-- 	<div class='container'>
+	<!-- 	<div class='container'>
 		<div class='col-md-12'>
 			<h2>Recent projects in <i>Geography 370</i></h2>
 			<div id='results'>
@@ -439,35 +431,15 @@
 		</div>
 	</div> -->
 
-</div>
+	</div>
 
-<footer class="footer navbar-fixed-bottom">
-		<div class="container">
-		    <div class="row">
-		        <div class="align-center">
-		            <br>
-		            <img src="../../img/UWCL_logo_gray.png">
+	<site-footer></site-footer>
 
-		            <p>Copyright 2019&copy; All Rights Reserved.</p>
-		        </div>
-		    </div>
-		</div>
-</footer>
-
-<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-      <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="../../js/jquery.cookie.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.ba-cond.min.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.slitslider.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.prettyPhoto.js" type="text/javascript">
-</script>
-<script src="../../js/custom.js" type="text/javascript">
-</script>
-<script src="../../js/main.js" type="text/javascript">
-</script>
+	<script src="../../js/jquery-3.1.1.js" type="text/javascript"></script>
+	<script src="../../js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../js/html_templates.js" type="text/javascript"></script>
+	<script src="../../js/main.js" type="text/javascript"></script>
+	
 </body>
+
 </html>
