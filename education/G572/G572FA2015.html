@@ -2,423 +2,411 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
 
-<!-- Basic Page Needs
+	<!-- Basic Page Needs
 ================================================== -->
-<meta charset="utf-8">
-<title>UWCL</title>
-<meta name="description" content="">
-<meta name="author" content="">
+	<meta charset="utf-8">
+	<title>UWCL</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-<style>
-	#results{
-	min-height: 100%!important;
-	overflow: auto;
-	margin-bottom: 50px!important;
-	padding-bottom: 50px!important;
-	}
-	#ajaxloader{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	}
+	<style>
+		#results {
+			min-height: 100% !important;
+			overflow: auto;
+			margin-bottom: 50px !important;
+			padding-bottom: 50px !important;
+		}
 
-	ol li:before{
-	background-color: none !important;
-	}
-	footer{
-	margin-top: 50px;
-	}
-	.img-responsive{
-	position: relative;
-	margin-right:0%!important;
-	margin-left:22.5%!important;
-	padding:0px!important;
-	}
-	.carousel-inner > .item > img {
-	margin: 0 auto!important;
-	}
+		#ajaxloader {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
-	.edu{
-	max-width: 100%;
-	height: auto;
-	}
+		ol li:before {
+			background-color: none !important;
+		}
 
-	.course{
-	padding-bottom: 50px;
-	}
-</style>
+		footer {
+			margin-top: 50px;
+		}
 
-<!-- Mobile Specific Metas
+		.d-block w-100 {
+			position: relative;
+			margin-right: 0% !important;
+			margin-left: 22.5% !important;
+			padding: 0px !important;
+		}
+
+		.carousel-inner>.item>img {
+			margin: 0 auto !important;
+		}
+
+		.edu {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.course {
+			padding-bottom: 50px;
+		}
+	</style>
+
+	<!-- Mobile Specific Metas
 ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!-- CSS
+	<!-- CSS
 ================================================== -->
-<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 
 
 
-<!-- Fonts
+	<!-- Fonts
 ================================================== -->
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400,300,200' rel='stylesheet'
+		type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Javascript
+	<!-- Javascript
 ================================================== -->
-<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
+	<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script>
 
-<!-- Favicons
+	<!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="../../img/favicon.ico">
-<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../../img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../img/apple-touch-icon-144x144.png">
 
 </head>
 
 <body>
-<!--Collapsing NavBar --> 
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="../../index.html"><img src="../../img/UWCL_logo_white.png" alt="UW Cartography Lab" style="width:80px;height:auto;"></a>
-        </div>
+	<!--Collapsing NavBar -->
+	<site-header></site-header>
+	<!--end of header -->
+	<div class='container'>
+		<div class='col-md-12'>
 
-	    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-	        <ul class="nav navbar-nav navText">
-	            <li><a href="../../production/index.html" id="navText">Production</a></li>
-	            <li><a href="../../research/index.html" id="navText">Research</a></li>
-	            <li><a href="../index.html" id="navText">Education</a></li>
-        <li><a href="../../people/index.html" id="navText">People</a></li>
-           </ul>
-	    </div>
-      </div>
-    </nav>
-<!--end of header --> 
-<div class='container'>
-	<div class='col-md-12'>
+			<h1 class='page-header'>Education <i>Courses</i></h1>
 
-		<h1 class='page-header'>Education <i>Courses</i></h1>
+			<div id="productionCarousel" class="carousel slide" data-ride="carousel">
 
-		<div id="productionCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<div class="carousel-indicators">
+					<button type="button" class="indicator-button active" data-bs-target="#productionCarousel"
+						data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<button type="button" class="indicator-button" data-bs-target="#productionCarousel"
+						data-bs-slide-to="4" aria-label="Slide 5"></button>
+				</div>
 
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#productionCarousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#productionCarousel" data-slide-to="1"></li>
-		    <li data-target="#productionCarousel" data-slide-to="2"></li>
-		    <li data-target="#productionCarousel" data-slide-to="3"></li>
-		    <li data-target="#productionCarousel" data-slide-to="4"></li>
-		  </ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
 
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox">
-		    
-		    <div class="item active">
-		      <img src="2015FA/imgWide/Fall2015_CallaLittle.png" class='img-responsive' alt="...">
-		    </div>
+					<div class="carousel-item active" data-bs-interval="5000">
+						<img src="2015FA/imgWide/Fall2015_CallaLittle.png" class='d-block w-100' alt="...">
+					</div>
 
-			<div class="item">
-		      <img src="2015FA/imgWide/Fall2015_ChrisMorgan.png" class='img-responsive' alt="...">
-		    </div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="2015FA/imgWide/Fall2015_ChrisMorgan.png" class='d-block w-100' alt="...">
+					</div>
 
-			<div class="item">
-		      <img src="2015FA/imgWide/Fall2015_KatieKowalsky.png" class='img-responsive' alt="...">
-		    </div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="2015FA/imgWide/Fall2015_KatieKowalsky.png" class='d-block w-100' alt="...">
+					</div>
 
-		    <div class="item">
-		      <img src="2015FA/imgWide/Fall2015_MeganHowell.png" class='img-responsive' alt="...">
-		    </div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="2015FA/imgWide/Fall2015_MeganHowell.png" class='d-block w-100' alt="...">
+					</div>
 
-		    <div class="item">
-		      <img src="2015FA/imgWide/Fall2015_RobinTolochko.png" class='img-responsive' alt="...">
-		    </div>
-		  </div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="2015FA/imgWide/Fall2015_RobinTolochko.png" class='d-block w-100' alt="...">
+					</div>
+				</div>
 
-		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#productionCarousel" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#productionCarousel" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
+				<!-- Left and right controls -->
+				<button class="carousel-control-prev" data-bs-target="#productionCarousel" type="button"
+					data-bs-slide="prev">
+					<span class="fa fa-chevron-left fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" data-bs-target="#productionCarousel" type="button"
+					data-bs-slide="next">
+					<span class="fa fa-chevron-right fa-2x" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+
+			</div>
 		</div>
 	</div>
-</div>
 
 	<div class='container'>
-		<div class='overview'>
+		<div class='row overview'>
 
 			<div class='col-md-8'>
 
 				<div class='course'>
 
 					<h2>Geography 572: Graphic Design in Cartography</h2>
-					
-					<p>This course provides an in-depth examination of advanced topics in cartographic representation, or the graphics, sounds, haptics, etc., constituting a map that are employed to encode geographic information. It is a direct extension of 370, but with a focus on cartographic design for the web rather than print, and draws upon research and practice on graphic design, web design, and art. Specifically, it integrates theory on both mapmaking and map use (compared to 170 or 370, which focus upon one or the other) and emphasizes design of web-delivered static maps, rather than the design of interfaces for manipulating these maps (compared to 575). The course is divided into two components: lectures and labs.</p>
+
+					<p>This course provides an in-depth examination of advanced topics in cartographic representation,
+						or the graphics, sounds, haptics, etc., constituting a map that are employed to encode
+						geographic information. It is a direct extension of 370, but with a focus on cartographic design
+						for the web rather than print, and draws upon research and practice on graphic design, web
+						design, and art. Specifically, it integrates theory on both mapmaking and map use (compared to
+						170 or 370, which focus upon one or the other) and emphasizes design of web-delivered static
+						maps, rather than the design of interfaces for manipulating these maps (compared to 575). The
+						course is divided into two components: lectures and labs.</p>
 
 					<p>Check out past syllabi and finals projects below!</p>
 
 					<h2>Fall 2015</h2>
 					<p>Instructor: Robert Roth<br>
-					TA: Chelsea Nestel</p>
-					<h3 class='page-header'><a href="../assets/syllabi/G572_fall2015.pdf" target="_block">Fall 2015 Syllabus</a> </h3>
+						TA: Chelsea Nestel</p>
+					<h3 class='page-header'><a href="../../projects/syllabi/G572_fall2015.pdf" target="_block">Fall 2015
+							Syllabus</a> </h3>
 
 
 				</div>
 			</div>
 
 			<div class='col-md-4'>
-					<h3>Education</h3>
+				<h3>Education</h3>
 
-			 		<div>
-							<p>	
-								<a href="../curriculum.html">Curriculum Overview</a><br>
-								<a href="../G370/G370FA2020.html">G370: Introduction to Cart</a><br>
-								<a href="G572FA2022.html">G572: Graphic Design</a><br>
-								<a href="../G575/G575SP2020.html">G575: Interactive Cart</a><br>
-								<a href="../G970.html">G970: Cartography Seminar</a><br>
-								<a href="../designChallenge.html">Design Challenge</a><br>
-								<a href="../CLES.html">Cart Lab Education Series (CLES)</a><br>
-								<a href="../eduResources.html">Educational Resources </a><br>					
-								<a href="../../contact.html">Contact Us</a><br>
+				<div>
+					<p>
+						<a href="../curriculum.html">Curriculum Overview</a><br>
+						<a href="../G370/G370FA2021.html">G370: Introduction to Cart</a><br>
+						<a href="G572FA2022.html">G572: Graphic Design</a><br>
+						<a href="../G575/G575SP2021.html">G575: Interactive Cart</a><br>
+						<a href="../G970.html">G970: Cartography Seminar</a><br>
+						<a href="../webmapping.html">Web Mapping Workbook</a><br>
+						<a href="../sdg.html">Mapping for a Sustainable World Textbook</a><br>
+						<a href="../QGISTutorials.html">QGIS Open Source Tutorials</a><br>
+						<a href="../designChallenge.html">Design Challenge</a><br>
+						<a href="../CLES.html">Cart Lab Education Series (CLES)</a><br>
+						<a href="../eduResources.html">Educational Resources </a><br>
+						<a href="../../github.html">Github Projects</a><br>
+						<a href="../../contact.html">Contact Us</a><br>
 
-					</div>
+				</div>
+				<h3>Final Projects</h3>
+
+				<div>
+					<p>
+						<a href="G572FA2022.html">Fall 2022</a><br>
+						<a href="G572FA2020.html">Fall 2020</a><br>
+						<a href="G572FA2019.html">Fall 2019</a><br>
+						<a href="G572FA2018.html">Fall 2018</a><br>
+						<a href='G572FA2017.html'>Fall 2017</a><br>
+						<a href="G572FA2015.html">Fall 2015</a><br>
+						<a href="G572FA2013.html">Fall 2013</a><br>
+						<a href="G572FA2012.html">Fall 2012</a><br>
+
+				</div>
 			</div>
 
-			<div class='col-md-4'>
-					<h3>Final Projects</h3>
-	
-					 <div>
-						 <p>
-							<a href="G572FA2022.html">Fall 2022</a><br>
-							<a href="G572FA2020.html">Fall 2020</a><br>
-							<a href="G572FA2019.html">Fall 2019</a><br>
-							<a href="G572FA2018.html">Fall 2018</a><br>
-							<a href='G572FA2017.html'>Fall 2017</a><br>
-							<a href="G572FA2015.html">Fall 2015</a><br>
-							<a href="G572FA2013.html">Fall 2013</a><br>
-							<a href="G572FA2012.html">Fall 2012</a><br>
-	
-					</div>
-				</div>
-				
 		</div>
 	</div>
-
 	<div class='container'>
-		<div class='col-md-12'>
-					<h2 class='page-header'>Final Projects</h2> 
-					<a href='2015FA/PDF/Fall2015AdamsDoug.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015AdamsDoug.png' alt='...' class='final'>
-						<h3 class='finalProject'> Hiking in Colorado       </h3>
-						<p><i>Doug Adams</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015AnthonyWill.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015AnthonyWill.png' alt='...' class='final'>
-						<h3 class='finalProject'> Hope Farm Conservancy       </h3>
-						<p><i>Will Anthony</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015CooperGillian.JPG' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015CooperGillian.png' alt='...' class='final'>
-						<h3 class='finalProject'>    California in Wood    </h3>
-						<p><i>Gillian Cooper</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015DickensMichael.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015DickensMichael.png' alt='...' class='final'>
-						<h3 class='finalProject'>   History of Hamburgers     </h3>
-						<p><i>Michael Dickens</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015GirginTimur.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015GirginTimur.png' alt='...' class='final'>
-						<h3 class='finalProject'> CartoDB: Geospatial on the cloud       </h3>
-						<p><i>Timur Girgin</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015HowellMegan.png' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015HowellMegan.png' alt='...' class='final'>
-						<h3 class='finalProject'>    Mars Exploration    </h3>
-						<p><i>Megan Howell</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015KellyMeghan.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015KellyMeghan.png' alt='...' class='final'>
-						<h3 class='finalProject'>  Collectively Mapping Borders: Syrian Refugee Border Crossings      </h3>
-						<p><i>Meghan Kelly</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015KowalskyKatie.jpg' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015KowalskyKatie.png' alt='...' class='final'>
-						<h3 class='finalProject'>    Vermont and New Hampshire    </h3>
-						<p><i>Katie Kowalsky</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015LiangMengyu.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015LiangMengyu.png' alt='...' class='final'>
-						<h3 class='finalProject'>  Research the Icy Land      </h3>
-						<p><i>Mengyu Liang</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015LittleCalla.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015LittleCalla.png' alt='...' class='final'>
-						<h3 class='finalProject'>  Sailing the Great Lakes: Memories of a Merchant Mariner      </h3>
-						<p><i>Calla Little</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015McHughJon.png' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015McHughJon.png' alt='...' class='final'>
-						<h3 class='finalProject'> The McHugh Family Travels       </h3>
-						<p><i>Jon McHugh</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015MonahanBridget.png' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015MonahanBridget.png' alt='...' class='final'>
-						<h3 class='finalProject'>  The Deadliest Places in the United States      </h3>
-						<p><i>Bridget Monahan</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015MorganChris.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015MorganChris.png' alt='...' class='final'>
-						<h3 class='finalProject'>   A Cultural Tour of Ireland     </h3>
-						<p><i>Chris Morgan</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015PlumVeronica.png' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015PlumVeronica.png' alt='...' class='final'>
-						<h3 class='finalProject'>   China's Global Involvement     </h3>
-						<p><i>Veronica Plum</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015SchumacherMolly.png' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015SchumacherMolly.png' alt='...' class='final'>
-						<h3 class='finalProject'> Disappearing Lower Florida Keys       </h3>
-						<p><i>Molly Schumacher</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015TavanoJoe.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015TavanoJoe.png' alt='...' class='final'>
-						<h3 class='finalProject'>  Ghost Stations of New York City      </h3>
-						<p><i>Joe Tavano</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015TolochkoRobin.png' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015TolochkoRobin.png' alt='...' class='final'>
-						<h3 class='finalProject'>    morning in the grand tetons    </h3>
-						<p><i>Robin Tolochko</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015TrainorClare.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015TrainorClare.png' alt='...' class='final'>
-						<h3 class='finalProject'>   Vancouver British Columbia     </h3>
-						<p><i>Clare Trainor</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015VincentKristen.png' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015VincentKristen.png' alt='...' class='final'>
-						<h3 class='finalProject'>  Saint Norbert College      </h3>
-						<p><i>Kristen Vincent</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015WalljasperSoren.pdf' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015WalljasperSoren.png' alt='...' class='final'>
-						<h3 class='finalProject'>  Is This the Belize of the Future?      </h3>
-						<p><i>Soren Walljasper</i></p>
-						</div></a>
-						
-						<a href='2015FA/PDF/Fall2015WestburyWill.png' target='_blank'>
-						<div class='col-md-4 col-sm-6 centerFinal'>
-						<img src='2015FA/ImgSq/Fall2015WestburyWill.png' alt='...' class='final'>
-						<h3 class='finalProject'>  Yellowstone National Park      </h3>
-						<p><i>Will Westbury</i></p>
-						</div></a>
-						
+		<div class='row'>
+			<div class='col-md-12'>
+				<h2 class='page-header'>Final Projects</h2>
+			</div>
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015AdamsDoug.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015AdamsDoug.png' alt='...' class='final'>
+					<h3 class='finalProject'> Hiking in Colorado </h3>
+					<p><i>Doug Adams</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015AnthonyWill.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015AnthonyWill.png' alt='...' class='final'>
+					<h3 class='finalProject'> Hope Farm Conservancy </h3>
+					<p><i>Will Anthony</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015CooperGillian.JPG' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015CooperGillian.png' alt='...' class='final'>
+					<h3 class='finalProject'> California in Wood </h3>
+					<p><i>Gillian Cooper</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015DickensMichael.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015DickensMichael.png' alt='...' class='final'>
+					<h3 class='finalProject'> History of Hamburgers </h3>
+					<p><i>Michael Dickens</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015GirginTimur.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015GirginTimur.png' alt='...' class='final'>
+					<h3 class='finalProject'> CartoDB: Geospatial on the cloud </h3>
+					<p><i>Timur Girgin</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015HowellMegan.png' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015HowellMegan.png' alt='...' class='final'>
+					<h3 class='finalProject'> Mars Exploration </h3>
+					<p><i>Megan Howell</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015KellyMeghan.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015KellyMeghan.png' alt='...' class='final'>
+					<h3 class='finalProject'> Collectively Mapping Borders: Syrian Refugee Border Crossings </h3>
+					<p><i>Meghan Kelly</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015KowalskyKatie.jpg' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015KowalskyKatie.png' alt='...' class='final'>
+					<h3 class='finalProject'> Vermont and New Hampshire </h3>
+					<p><i>Katie Kowalsky</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015LiangMengyu.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015LiangMengyu.png' alt='...' class='final'>
+					<h3 class='finalProject'> Research the Icy Land </h3>
+					<p><i>Mengyu Liang</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015LittleCalla.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015LittleCalla.png' alt='...' class='final'>
+					<h3 class='finalProject'> Sailing the Great Lakes: Memories of a Merchant Mariner </h3>
+					<p><i>Calla Little</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015McHughJon.png' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015McHughJon.png' alt='...' class='final'>
+					<h3 class='finalProject'> The McHugh Family Travels </h3>
+					<p><i>Jon McHugh</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015MonahanBridget.png' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015MonahanBridget.png' alt='...' class='final'>
+					<h3 class='finalProject'> The Deadliest Places in the United States </h3>
+					<p><i>Bridget Monahan</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015MorganChris.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015MorganChris.png' alt='...' class='final'>
+					<h3 class='finalProject'> A Cultural Tour of Ireland </h3>
+					<p><i>Chris Morgan</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015PlumVeronica.png' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015PlumVeronica.png' alt='...' class='final'>
+					<h3 class='finalProject'> China's Global Involvement </h3>
+					<p><i>Veronica Plum</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015SchumacherMolly.png' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015SchumacherMolly.png' alt='...' class='final'>
+					<h3 class='finalProject'> Disappearing Lower Florida Keys </h3>
+					<p><i>Molly Schumacher</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015TavanoJoe.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015TavanoJoe.png' alt='...' class='final'>
+					<h3 class='finalProject'> Ghost Stations of New York City </h3>
+					<p><i>Joe Tavano</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015TolochkoRobin.png' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015TolochkoRobin.png' alt='...' class='final'>
+					<h3 class='finalProject'> morning in the grand tetons </h3>
+					<p><i>Robin Tolochko</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015TrainorClare.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015TrainorClare.png' alt='...' class='final'>
+					<h3 class='finalProject'> Vancouver British Columbia </h3>
+					<p><i>Clare Trainor</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015VincentKristen.png' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015VincentKristen.png' alt='...' class='final'>
+					<h3 class='finalProject'> Saint Norbert College </h3>
+					<p><i>Kristen Vincent</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015WalljasperSoren.pdf' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015WalljasperSoren.png' alt='...' class='final'>
+					<h3 class='finalProject'> Is This the Belize of the Future? </h3>
+					<p><i>Soren Walljasper</i></p>
+				</a>
+			</div>
+
+			<div class='col-lg-4 col-md-6 project'>
+				<a href='../../projects/G572/2015FA/Fall2015WestburyWill.png' class="projectLink" target='_blank'>
+					<img src='2015FA/ImgSq/Fall2015WestburyWill.png' alt='...' class='final'>
+					<h3 class='finalProject'> Yellowstone National Park </h3>
+					<p><i>Will Westbury</i></p>
+				</a>
+			</div>
+
 		</div>
 	</div>
 
+	<site-footer></site-footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="footer navbar-fixed-bottom">
-		<div class="container">
-		    <div class="row">
-		        <div class="align-center">
-		            <br>
-		            <img src="../../img/UWCL_logo_gray.png">
-
-		            <p>Copyright 2019&copy; All Rights Reserved.</p>
-		        </div>
-		    </div>
-		</div>
-</footer>
-
-
-<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-      <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="../../js/jquery.cookie.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.ba-cond.min.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.slitslider.js" type="text/javascript">
-</script>
-<script src="../../js/jquery.prettyPhoto.js" type="text/javascript">
-</script>
-<script src="../../js/custom.js" type="text/javascript">
-</script>
-<script src="../../js/main.js" type="text/javascript">
-</script>
-
-
+	<script src="../../js/jquery-3.1.1.js" type="text/javascript"></script>
+	<script src="../../js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../js/html_templates.js" type="text/javascript"></script>
+	<script src="../../js/main.js" type="text/javascript"></script>
+	
 </body>
+
 </html>
